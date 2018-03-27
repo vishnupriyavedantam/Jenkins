@@ -1,0 +1,10 @@
+Started on Mar 2, 2018 12:25:42 AM
+Using strategy: Default
+[poll] Last Built Revision: Revision d01302f1ccfeed57949a6b5a2e684853993e71ce (refs/remotes/origin/dev)
+ > git --version # timeout=10
+using GIT_ASKPASS to set credentials 
+ > git ls-remote -h https://rajuops1@bitbucket.org/rajuops1/ccst-angular.git # timeout=10
+Found 1 remote heads on https://rajuops1@bitbucket.org/rajuops1/ccst-angular.git
+[poll] Latest remote head revision on refs/heads/dev is: 7dfa6cdd34b32a88134b6eaf90fa4d0f9bf17a79
+Done. Took 1.1 sec
+Changes found

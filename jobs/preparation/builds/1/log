@@ -1,0 +1,79 @@
+Started by user [8mha:////4CmxTz33j52/JKdJy1Lt7Xj43LMfbPi10dVPMxZ7t8ixAAAAlx+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAzREgZu/dLi1CL9xJTczDwAwD7+acAAAAA=[0mvishnu priya vedantam
+Building remotely on [8mha:////4KnxwFG0+pUdQXDoOyvQmGroKVPcHxut9RS6DnfLjwmHAAAAmh+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAzWEgZ+/eT83ILSktQi/TygOw0BADPgR8QAAAA=[0mnode1 (slave) in workspace /home/ec2-user/node/workspace/preparation
+[preparation] $ /bin/sh -xe /tmp/jenkins2599340308884228267.sh
++ sudo yum install -y git
+Loaded plugins: amazon-id, rhui-lb, search-disabled-repos
+Package git-1.8.3.1-12.el7_4.x86_64 already installed and latest version
+Nothing to do
++ sudo yum install -y npm
+Loaded plugins: amazon-id, rhui-lb, search-disabled-repos
+Resolving Dependencies
+--> Running transaction check
+---> Package npm.x86_64 1:3.10.10-1.6.12.3.1.el7 will be installed
+--> Processing Dependency: nodejs = 1:6.12.3-1.el7 for package: 1:npm-3.10.10-1.6.12.3.1.el7.x86_64
+--> Running transaction check
+---> Package nodejs.x86_64 1:6.12.3-1.el7 will be installed
+--> Processing Dependency: http-parser >= 2.7.0 for package: 1:nodejs-6.12.3-1.el7.x86_64
+--> Processing Dependency: libuv >= 1:1.9.1 for package: 1:nodejs-6.12.3-1.el7.x86_64
+--> Processing Dependency: libhttp_parser.so.2()(64bit) for package: 1:nodejs-6.12.3-1.el7.x86_64
+--> Processing Dependency: libuv.so.1()(64bit) for package: 1:nodejs-6.12.3-1.el7.x86_64
+--> Running transaction check
+---> Package http-parser.x86_64 0:2.7.1-5.el7_4 will be installed
+---> Package libuv.x86_64 1:1.10.2-1.el7 will be installed
+--> Finished Dependency Resolution
+
+Dependencies Resolved
+
+================================================================================
+ Package Arch   Version                  Repository                        Size
+================================================================================
+Installing:
+ npm     x86_64 1:3.10.10-1.6.12.3.1.el7 epel                             2.5 M
+Installing for dependencies:
+ http-parser
+         x86_64 2.7.1-5.el7_4            rhui-REGION-rhel-server-releases  28 k
+ libuv   x86_64 1:1.10.2-1.el7           epel                             109 k
+ nodejs  x86_64 1:6.12.3-1.el7           epel                             4.6 M
+
+Transaction Summary
+================================================================================
+Install  1 Package (+3 Dependent packages)
+
+Total download size: 7.3 M
+Installed size: 26 M
+Downloading packages:
+warning: /var/cache/yum/x86_64/7Server/epel/packages/nodejs-6.12.3-1.el7.x86_64.rpm: Header V3 RSA/SHA256 Signature, key ID 352c64e5: NOKEY
+Public key for nodejs-6.12.3-1.el7.x86_64.rpm is not installed
+--------------------------------------------------------------------------------
+Total                                              8.0 MB/s | 7.3 MB  00:00     
+Retrieving key from file:///etc/pki/rpm-gpg/RPM-GPG-KEY-EPEL-7
+Importing GPG key 0x352C64E5:
+ Userid     : "Fedora EPEL (7) <epel@fedoraproject.org>"
+ Fingerprint: 91e9 7d7c 4a5e 96f1 7f3e 888f 6a2f aea2 352c 64e5
+ Package    : epel-release-7-11.noarch (installed)
+ From       : /etc/pki/rpm-gpg/RPM-GPG-KEY-EPEL-7
+Running transaction check
+Running transaction test
+Transaction test succeeded
+Running transaction
+  Installing : http-parser-2.7.1-5.el7_4.x86_64                             1/4 
+  Installing : 1:libuv-1.10.2-1.el7.x86_64                                  2/4 
+  Installing : 1:npm-3.10.10-1.6.12.3.1.el7.x86_64                          3/4 
+  Installing : 1:nodejs-6.12.3-1.el7.x86_64                                 4/4 
+  Verifying  : 1:libuv-1.10.2-1.el7.x86_64                                  1/4 
+  Verifying  : 1:npm-3.10.10-1.6.12.3.1.el7.x86_64                          2/4 
+  Verifying  : http-parser-2.7.1-5.el7_4.x86_64                             3/4 
+  Verifying  : 1:nodejs-6.12.3-1.el7.x86_64                                 4/4 
+
+Installed:
+  npm.x86_64 1:3.10.10-1.6.12.3.1.el7                                           
+
+Dependency Installed:
+  http-parser.x86_64 0:2.7.1-5.el7_4         libuv.x86_64 1:1.10.2-1.el7        
+  nodejs.x86_64 1:6.12.3-1.el7              
+
+Complete!
++ sudo npm install -g @angular/cli
+/tmp/jenkins2599340308884228267.sh: line 4: 11039 Killed                  sudo npm install -g @angular/cli
+Build step 'Execute shell' marked build as failure
+Finished: FAILURE

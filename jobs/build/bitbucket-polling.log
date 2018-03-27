@@ -1,0 +1,10 @@
+Started on Feb 28, 2018 3:55:44 AM
+Using strategy: Default
+[poll] Last Built Revision: Revision 882a5022aad8fe97f76cbf566a30f6c27bc24bc8 (refs/remotes/origin/dev)
+ > git --version # timeout=10
+using GIT_ASKPASS to set credentials 
+ > git ls-remote -h https://rajuops1@bitbucket.org/maxotechteam/ccst-front.git # timeout=10
+Found 2 remote heads on https://rajuops1@bitbucket.org/maxotechteam/ccst-front.git
+[poll] Latest remote head revision on refs/heads/dev is: 70aa4a90cedfbd21e75f52438d8698639768a4c0
+Done. Took 1.1 sec
+Changes found

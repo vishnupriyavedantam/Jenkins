@@ -1,0 +1,40 @@
+Started by user [8mha:////4NpElINbBORbVkPcQsOEdSagCW4edM3FdZg7wRnbm5B+AAAAmh+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAyWEgY+/dLi1CL9osSsUr38gmIAKwHtocMAAAA=[0mraju
+Building remotely on [8mha:////4KnxwFG0+pUdQXDoOyvQmGroKVPcHxut9RS6DnfLjwmHAAAAmh+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAzWEgZ+/eT83ILSktQi/TygOw0BADPgR8QAAAA=[0mnode1 (slave) in workspace /home/ec2-user/node/workspace/build
+Cloning the remote Git repository
+Cloning repository https://rajuops1@bitbucket.org/maxotechteam/ccst-front.git
+ > /usr/bin/git init /home/ec2-user/node/workspace/build # timeout=10
+Fetching upstream changes from https://rajuops1@bitbucket.org/maxotechteam/ccst-front.git
+ > /usr/bin/git --version # timeout=10
+using GIT_ASKPASS to set credentials 
+ > /usr/bin/git fetch --tags --progress https://rajuops1@bitbucket.org/maxotechteam/ccst-front.git +refs/heads/*:refs/remotes/origin/*
+ > /usr/bin/git config remote.origin.url https://rajuops1@bitbucket.org/maxotechteam/ccst-front.git # timeout=10
+ > /usr/bin/git config --add remote.origin.fetch +refs/heads/*:refs/remotes/origin/* # timeout=10
+ > /usr/bin/git config remote.origin.url https://rajuops1@bitbucket.org/maxotechteam/ccst-front.git # timeout=10
+Fetching upstream changes from https://rajuops1@bitbucket.org/maxotechteam/ccst-front.git
+using GIT_ASKPASS to set credentials 
+ > /usr/bin/git fetch --tags --progress https://rajuops1@bitbucket.org/maxotechteam/ccst-front.git +refs/heads/*:refs/remotes/origin/*
+ > /usr/bin/git rev-parse refs/remotes/origin/dev^{commit} # timeout=10
+ > /usr/bin/git rev-parse refs/remotes/origin/origin/dev^{commit} # timeout=10
+Checking out Revision 333924078d8d21c5ffa02e6984d570e840362824 (refs/remotes/origin/dev)
+ > /usr/bin/git config core.sparsecheckout # timeout=10
+ > /usr/bin/git checkout -f 333924078d8d21c5ffa02e6984d570e840362824
+Commit message: "added media query to the form header"
+ > /usr/bin/git rev-list --no-walk 333924078d8d21c5ffa02e6984d570e840362824 # timeout=10
+[build] $ /bin/sh -xe /tmp/jenkins5621523945074667944.sh
++ sudo yum install -y npm
+Loaded plugins: amazon-id, rhui-lb, search-disabled-repos
+Package 1:npm-3.10.10-1.6.12.3.1.el7.x86_64 already installed and latest version
+Nothing to do
++ sudo npm install -g @angular/cli
+/usr/bin/ng -> /usr/lib/node_modules/@angular/cli/bin/ng
+/usr/lib
+└── @angular/cli@1.7.1 
+
+npm WARN optional SKIPPING OPTIONAL DEPENDENCY: fsevents@^1.0.0 (node_modules/@angular/cli/node_modules/chokidar/node_modules/fsevents):
+npm WARN notsup SKIPPING OPTIONAL DEPENDENCY: Unsupported platform for fsevents@1.1.3: wanted {"os":"darwin","arch":"any"} (current: {"os":"linux","arch":"x64"})
+npm WARN optional SKIPPING OPTIONAL DEPENDENCY: fsevents@^1.0.0 (node_modules/@angular/cli/node_modules/webpack-dev-server/node_modules/chokidar/node_modules/fsevents):
+npm WARN notsup SKIPPING OPTIONAL DEPENDENCY: Unsupported platform for fsevents@1.1.3: wanted {"os":"darwin","arch":"any"} (current: {"os":"linux","arch":"x64"})
++ sudo npm install
+/tmp/jenkins5621523945074667944.sh: line 4: 14606 Killed                  sudo npm install
+Build step 'Execute shell' marked build as failure
+Finished: FAILURE

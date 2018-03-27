@@ -1,0 +1,11 @@
+commit 32f97fa9e627c140cc4eba9338321fd614623db4
+tree e34d52d629aa18b0c8861c35d3a3f0a06386f238
+parent 175360890b761fd6995e90d5c6e6d87634ce28be
+author chikna <chikna88@gmail.com> 2018-02-28 10:10:37 -0600
+committer chikna <chikna88@gmail.com> 2018-02-28 10:10:37 -0600
+
+    Removed commit from package.json
+
+
+
+:100644 100644 be2502fd2366b2ce8d9ac6f5072e133cf54d2702 6b08409daa7b778aead87196361d0eb049c95866 M	package.json

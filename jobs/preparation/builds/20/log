@@ -1,0 +1,14 @@
+Started by user [8mha:////4CmxTz33j52/JKdJy1Lt7Xj43LMfbPi10dVPMxZ7t8ixAAAAlx+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAzREgZu/dLi1CL9xJTczDwAwD7+acAAAAA=[0mvishnu priya vedantam
+Building remotely on [8mha:////4KnxwFG0+pUdQXDoOyvQmGroKVPcHxut9RS6DnfLjwmHAAAAmh+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAzWEgZ+/eT83ILSktQi/TygOw0BADPgR8QAAAA=[0mnode1 (slave) in workspace /home/ec2-user/node/workspace/preparation
+[preparation] $ /bin/sh -xe /tmp/jenkins6097269735874113352.sh
++ sudo yum install -y git
+Loaded plugins: amazon-id, rhui-lb, search-disabled-repos
+Package git-1.8.3.1-12.el7_4.x86_64 already installed and latest version
+Nothing to do
++ sudo yum install -y npm
+Loaded plugins: amazon-id, rhui-lb, search-disabled-repos
+Package 1:npm-3.10.10-1.6.12.3.1.el7.x86_64 already installed and latest version
+Nothing to do
+[8mha:////4JAZtB3hWBEeltNXKPy99Rzg46fR75qY7Hb0AP59y3WHAAAAlx+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAzWEgZu/az8JP2k0sycFH0AsN5xmMAAAAA=[0mbuild is disabled. Triggering skipped
+Triggering a new build of [8mha:////4JAZtB3hWBEeltNXKPy99Rzg46fR75qY7Hb0AP59y3WHAAAAlx+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAzWEgZu/az8JP2k0sycFH0AsN5xmMAAAAA=[0mbuild
+Finished: SUCCESS

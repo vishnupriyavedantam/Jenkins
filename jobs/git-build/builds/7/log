@@ -1,0 +1,55 @@
+Started by user [8mha:////4NpElINbBORbVkPcQsOEdSagCW4edM3FdZg7wRnbm5B+AAAAmh+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAyWEgY+/dLi1CL9osSsUr38gmIAKwHtocMAAAA=[0mraju
+Building remotely on [8mha:////4BY/bhOwoWv6/QtocEYzjpy7I8Sf96CKtwfOnbD18ZGRAAAAnR+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAz2EgZB/eT83ILSktQi/fTkAt3EggIAp5lfF8YAAAA=[0mgcp-app in workspace /home/rajuops1/jenkins/workspace/git-build
+ > git rev-parse --is-inside-work-tree # timeout=10
+Fetching changes from the remote Git repository
+ > git config remote.origin.url https://rajuops1@bitbucket.org/rajuops1/ccst-angular.git # timeout=10
+Fetching upstream changes from https://rajuops1@bitbucket.org/rajuops1/ccst-angular.git
+ > git --version # timeout=10
+using GIT_ASKPASS to set credentials 
+ > git fetch --tags --progress https://rajuops1@bitbucket.org/rajuops1/ccst-angular.git +refs/heads/*:refs/remotes/origin/*
+ > git rev-parse refs/remotes/origin/dev^{commit} # timeout=10
+ > git rev-parse refs/remotes/origin/origin/dev^{commit} # timeout=10
+Checking out Revision d01302f1ccfeed57949a6b5a2e684853993e71ce (refs/remotes/origin/dev)
+ > git config core.sparsecheckout # timeout=10
+ > git checkout -f d01302f1ccfeed57949a6b5a2e684853993e71ce
+Commit message: "mongoose.js edited online with Bitbucket"
+ > git rev-list --no-walk 515d51c79d7dd8dc292983c1d91d08ef35a8210c # timeout=10
+[git-build] $ /bin/sh -xe /tmp/jenkins3932829945398327159.sh
++ sudo yum install -y npm
+Loaded plugins: fastestmirror
+Loading mirror speeds from cached hostfile
+ * base: mirrors.gigenet.com
+ * epel: mirror.steadfast.net
+ * extras: repo1.dal.innoscale.net
+ * updates: bay.uchicago.edu
+Package 1:npm-3.10.10-1.6.12.3.1.el7.x86_64 already installed and latest version
+Nothing to do
++ sudo npm install
+npm WARN optional SKIPPING OPTIONAL DEPENDENCY: fsevents@^1.0.0 (node_modules/chokidar/node_modules/fsevents):
+npm WARN notsup SKIPPING OPTIONAL DEPENDENCY: Unsupported platform for fsevents@1.1.3: wanted {"os":"darwin","arch":"any"} (current: {"os":"linux","arch":"x64"})
+npm WARN node-todo-api@1.0.0 No description
+npm WARN node-todo-api@1.0.0 No repository field.
++ sudo node server/server.js
+(node:15278) DeprecationWarning: `open()` is deprecated in mongoose >= 4.11.0, use `openUri()` instead, or set the `useMongoClient` option if using `connect()` or `createConnection()`. See http://mongoosejs.com/docs/connections.html#use-mongo-client
+Started up at port 3000
+
+events.js:160
+      throw er; // Unhandled 'error' event
+      ^
+MongoError: failed to connect to server [104.197.214.158:27017] on first connect [MongoError: connect ECONNREFUSED 104.197.214.158:27017]
+    at Pool.<anonymous> (/home/rajuops1/jenkins/workspace/git-build/node_modules/mongoose/node_modules/mongodb-core/lib/topologies/server.js:336:35)
+    at emitOne (events.js:96:13)
+    at Pool.emit (events.js:188:7)
+    at Connection.<anonymous> (/home/rajuops1/jenkins/workspace/git-build/node_modules/mongoose/node_modules/mongodb-core/lib/connection/pool.js:280:12)
+    at Connection.g (events.js:292:16)
+    at emitTwo (events.js:106:13)
+    at Connection.emit (events.js:191:7)
+    at Socket.<anonymous> (/home/rajuops1/jenkins/workspace/git-build/node_modules/mongoose/node_modules/mongodb-core/lib/connection/connection.js:189:49)
+    at Socket.g (events.js:292:16)
+    at emitOne (events.js:96:13)
+    at Socket.emit (events.js:188:7)
+    at emitErrorNT (net.js:1281:8)
+    at _combinedTickCallback (internal/process/next_tick.js:80:11)
+    at process._tickCallback (internal/process/next_tick.js:104:9)
+Build step 'Execute shell' marked build as failure
+Finished: FAILURE

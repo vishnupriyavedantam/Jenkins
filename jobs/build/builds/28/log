@@ -1,0 +1,90 @@
+Started by user [8mha:////4NpElINbBORbVkPcQsOEdSagCW4edM3FdZg7wRnbm5B+AAAAmh+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAyWEgY+/dLi1CL9osSsUr38gmIAKwHtocMAAAA=[0mraju
+Building remotely on [8mha:////4BY/bhOwoWv6/QtocEYzjpy7I8Sf96CKtwfOnbD18ZGRAAAAnR+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAz2EgZB/eT83ILSktQi/fTkAt3EggIAp5lfF8YAAAA=[0mgcp-app in workspace /home/rajuops1/jenkins/workspace/build
+Cloning the remote Git repository
+Cloning repository https://rajuops1@bitbucket.org/maxotechteam/ccst-front.git
+ERROR: Failed to clean the workspace
+[8mha:AAAAVx+LCAAAAAAAAP9b85aBtbiIQSmjNKU4P08vOT+vOD8nVc8DzHWtSE4tKMnMz/PLL0mV3NWzufebKBsTA0NFEYMUmgZnCA1SyAABjCCFBQC2xNaiYAAAAA==[0mjava.io.IOException: Unable to delete '/home/rajuops1/jenkins/workspace/build'. Tried 3 times (of a maximum of 3) waiting 0.1 sec between attempts.
+	at hudson.Util.deleteContentsRecursive(Util.java:230)
+	at org.jenkinsci.plugins.gitclient.CliGitAPIImpl$2.execute(CliGitAPIImpl.java:555)
+	at org.jenkinsci.plugins.gitclient.RemoteGitImpl$CommandInvocationHandler$1.call(RemoteGitImpl.java:153)
+	at org.jenkinsci.plugins.gitclient.RemoteGitImpl$CommandInvocationHandler$1.call(RemoteGitImpl.java:146)
+	at hudson.remoting.UserRequest.perform(UserRequest.java:207)
+	at hudson.remoting.UserRequest.perform(UserRequest.java:53)
+	at hudson.remoting.Request$2.run(Request.java:358)
+	at hudson.remoting.InterceptingExecutorService$1.call(InterceptingExecutorService.java:72)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+Caused by: java.nio.file.AccessDeniedException: /home/rajuops1/jenkins/workspace/build/node_modules/@angular-devkit/schematics
+	at sun.nio.fs.UnixException.translateToIOException(UnixException.java:84)
+	at sun.nio.fs.UnixException.rethrowAsIOException(UnixException.java:102)
+	at sun.nio.fs.UnixException.rethrowAsIOException(UnixException.java:107)
+	at sun.nio.fs.UnixFileSystemProvider.implDelete(UnixFileSystemProvider.java:244)
+	at sun.nio.fs.AbstractFileSystemProvider.deleteIfExists(AbstractFileSystemProvider.java:108)
+	at java.nio.file.Files.deleteIfExists(Files.java:1165)
+	at hudson.Util.tryOnceDeleteFile(Util.java:290)
+	at hudson.Util.tryOnceDeleteRecursive(Util.java:370)
+	at hudson.Util.tryOnceDeleteContentsRecursive(Util.java:389)
+	at hudson.Util.tryOnceDeleteRecursive(Util.java:369)
+	at hudson.Util.tryOnceDeleteContentsRecursive(Util.java:389)
+	at hudson.Util.tryOnceDeleteRecursive(Util.java:369)
+	at hudson.Util.tryOnceDeleteContentsRecursive(Util.java:389)
+	at hudson.Util.deleteContentsRecursive(Util.java:225)
+	... 11 more
+ERROR: Error cloning remote repo 'origin'
+[8mha:////4CKpjqLutC+FTB7CVblcFlwdGQEnqhZkCY1rZIYHQmtMAAAAVx+LCAAAAAAAAP9b85aBtbiIQSmjNKU4P08vOT+vOD8nVc8DzHWtSE4tKMnMz/PLL0mV3NWzufebKBsTA0NFEYMUmgZnCA1SyAABjCCFBQC2xNaiYAAAAA==[0mhudson.plugins.git.GitException: Failed to delete workspace
+	at org.jenkinsci.plugins.gitclient.CliGitAPIImpl$2.execute(CliGitAPIImpl.java:558)
+	at org.jenkinsci.plugins.gitclient.RemoteGitImpl$CommandInvocationHandler$1.call(RemoteGitImpl.java:153)
+	at org.jenkinsci.plugins.gitclient.RemoteGitImpl$CommandInvocationHandler$1.call(RemoteGitImpl.java:146)
+	at hudson.remoting.UserRequest.perform(UserRequest.java:207)
+	at hudson.remoting.UserRequest.perform(UserRequest.java:53)
+	at hudson.remoting.Request$2.run(Request.java:358)
+	at hudson.remoting.InterceptingExecutorService$1.call(InterceptingExecutorService.java:72)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+	Suppressed: hudson.remoting.Channel$CallSiteStackTrace: Remote call to gcp-app
+		at hudson.remoting.Channel.attachCallSiteStackTrace(Channel.java:1693)
+		at hudson.remoting.UserResponse.retrieve(UserRequest.java:310)
+		at hudson.remoting.Channel.call(Channel.java:908)
+		at org.jenkinsci.plugins.gitclient.RemoteGitImpl$CommandInvocationHandler.execute(RemoteGitImpl.java:146)
+		at sun.reflect.GeneratedMethodAccessor539.invoke(Unknown Source)
+		at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+		at java.lang.reflect.Method.invoke(Method.java:498)
+		at org.jenkinsci.plugins.gitclient.RemoteGitImpl$CommandInvocationHandler.invoke(RemoteGitImpl.java:132)
+		at com.sun.proxy.$Proxy70.execute(Unknown Source)
+		at hudson.plugins.git.GitSCM.retrieveChanges(GitSCM.java:1120)
+		at hudson.plugins.git.GitSCM.checkout(GitSCM.java:1160)
+		at hudson.scm.SCM.checkout(SCM.java:495)
+		at hudson.model.AbstractProject.checkout(AbstractProject.java:1202)
+		at hudson.model.AbstractBuild$AbstractBuildExecution.defaultCheckout(AbstractBuild.java:574)
+		at jenkins.scm.SCMCheckoutStrategy.checkout(SCMCheckoutStrategy.java:86)
+		at hudson.model.AbstractBuild$AbstractBuildExecution.run(AbstractBuild.java:499)
+		at hudson.model.Run.execute(Run.java:1724)
+		at hudson.model.FreeStyleBuild.run(FreeStyleBuild.java:43)
+		at hudson.model.ResourceController.execute(ResourceController.java:97)
+		at hudson.model.Executor.run(Executor.java:429)
+Caused by: java.io.IOException: Unable to delete '/home/rajuops1/jenkins/workspace/build'. Tried 3 times (of a maximum of 3) waiting 0.1 sec between attempts.
+	at hudson.Util.deleteContentsRecursive(Util.java:230)
+	at org.jenkinsci.plugins.gitclient.CliGitAPIImpl$2.execute(CliGitAPIImpl.java:555)
+	... 10 more
+Caused by: java.nio.file.AccessDeniedException: /home/rajuops1/jenkins/workspace/build/node_modules/@angular-devkit/schematics
+	at sun.nio.fs.UnixException.translateToIOException(UnixException.java:84)
+	at sun.nio.fs.UnixException.rethrowAsIOException(UnixException.java:102)
+	at sun.nio.fs.UnixException.rethrowAsIOException(UnixException.java:107)
+	at sun.nio.fs.UnixFileSystemProvider.implDelete(UnixFileSystemProvider.java:244)
+	at sun.nio.fs.AbstractFileSystemProvider.deleteIfExists(AbstractFileSystemProvider.java:108)
+	at java.nio.file.Files.deleteIfExists(Files.java:1165)
+	at hudson.Util.tryOnceDeleteFile(Util.java:290)
+	at hudson.Util.tryOnceDeleteRecursive(Util.java:370)
+	at hudson.Util.tryOnceDeleteContentsRecursive(Util.java:389)
+	at hudson.Util.tryOnceDeleteRecursive(Util.java:369)
+	at hudson.Util.tryOnceDeleteContentsRecursive(Util.java:389)
+	at hudson.Util.tryOnceDeleteRecursive(Util.java:369)
+	at hudson.Util.tryOnceDeleteContentsRecursive(Util.java:389)
+	at hudson.Util.deleteContentsRecursive(Util.java:225)
+	... 11 more
+ERROR: Error cloning remote repo 'origin'
+[8mha:////4CKpjqLutC+FTB7CVblcFlwdGQEnqhZkCY1rZIYHQmtMAAAAVx+LCAAAAAAAAP9b85aBtbiIQSmjNKU4P08vOT+vOD8nVc8DzHWtSE4tKMnMz/PLL0mV3NWzufebKBsTA0NFEYMUmgZnCA1SyAABjCCFBQC2xNaiYAAAAA==[0mFinished: FAILURE

@@ -1,0 +1,491 @@
+Started by user [8mha:////4NpElINbBORbVkPcQsOEdSagCW4edM3FdZg7wRnbm5B+AAAAmh+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAyWEgY+/dLi1CL9osSsUr38gmIAKwHtocMAAAA=[0mraju
+Building remotely on [8mha:////4K918rZ5LYbNPRMScxjX3g+MhEkqJIB5DQHUGB+LgPSLAAAAnR+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAwOoBn6yfm5BaUlqUX6ufl56fm6KUkA+FA9kccAAAA=[0mmongo-db in workspace /home/chikn/jenkins/workspace/git-build
+Cloning the remote Git repository
+Cloning repository https://rajuops1@bitbucket.org/rajuops1/ccst-angular.git
+ > git init /home/chikn/jenkins/workspace/git-build # timeout=10
+Fetching upstream changes from https://rajuops1@bitbucket.org/rajuops1/ccst-angular.git
+ > git --version # timeout=10
+using GIT_ASKPASS to set credentials 
+ > git fetch --tags --progress https://rajuops1@bitbucket.org/rajuops1/ccst-angular.git +refs/heads/*:refs/remotes/origin/*
+ > git config remote.origin.url https://rajuops1@bitbucket.org/rajuops1/ccst-angular.git # timeout=10
+ > git config --add remote.origin.fetch +refs/heads/*:refs/remotes/origin/* # timeout=10
+ > git config remote.origin.url https://rajuops1@bitbucket.org/rajuops1/ccst-angular.git # timeout=10
+Fetching upstream changes from https://rajuops1@bitbucket.org/rajuops1/ccst-angular.git
+using GIT_ASKPASS to set credentials 
+ > git fetch --tags --progress https://rajuops1@bitbucket.org/rajuops1/ccst-angular.git +refs/heads/*:refs/remotes/origin/*
+ > git rev-parse refs/remotes/origin/dev^{commit} # timeout=10
+ > git rev-parse refs/remotes/origin/origin/dev^{commit} # timeout=10
+Checking out Revision d01302f1ccfeed57949a6b5a2e684853993e71ce (refs/remotes/origin/dev)
+ > git config core.sparsecheckout # timeout=10
+ > git checkout -f d01302f1ccfeed57949a6b5a2e684853993e71ce
+Commit message: "mongoose.js edited online with Bitbucket"
+ > git rev-list --no-walk d01302f1ccfeed57949a6b5a2e684853993e71ce # timeout=10
+[git-build] $ /bin/sh -xe /tmp/jenkins2783461483544882149.sh
++ sudo yum install -y npm
+Loaded plugins: fastestmirror
+Loading mirror speeds from cached hostfile
+ * base: mirrors.advancedhosters.com
+ * epel: mirror.cogentco.com
+ * extras: www.gtlib.gatech.edu
+ * updates: reflector.westga.edu
+Resolving Dependencies
+--> Running transaction check
+---> Package npm.x86_64 1:3.10.10-1.6.12.3.1.el7 will be installed
+--> Processing Dependency: nodejs = 1:6.12.3-1.el7 for package: 1:npm-3.10.10-1.6.12.3.1.el7.x86_64
+--> Running transaction check
+---> Package nodejs.x86_64 1:6.12.3-1.el7 will be installed
+--> Processing Dependency: http-parser >= 2.7.0 for package: 1:nodejs-6.12.3-1.el7.x86_64
+--> Processing Dependency: libuv >= 1:1.9.1 for package: 1:nodejs-6.12.3-1.el7.x86_64
+--> Processing Dependency: libhttp_parser.so.2()(64bit) for package: 1:nodejs-6.12.3-1.el7.x86_64
+--> Processing Dependency: libuv.so.1()(64bit) for package: 1:nodejs-6.12.3-1.el7.x86_64
+--> Running transaction check
+---> Package http-parser.x86_64 0:2.7.1-5.el7_4 will be installed
+---> Package libuv.x86_64 1:1.10.2-1.el7 will be installed
+--> Finished Dependency Resolution
+
+Dependencies Resolved
+
+================================================================================
+ Package          Arch        Version                        Repository    Size
+================================================================================
+Installing:
+ npm              x86_64      1:3.10.10-1.6.12.3.1.el7       epel         2.5 M
+Installing for dependencies:
+ http-parser      x86_64      2.7.1-5.el7_4                  updates       28 k
+ libuv            x86_64      1:1.10.2-1.el7                 epel         109 k
+ nodejs           x86_64      1:6.12.3-1.el7                 epel         4.6 M
+
+Transaction Summary
+================================================================================
+Install  1 Package (+3 Dependent packages)
+
+Total download size: 7.3 M
+Installed size: 26 M
+Downloading packages:
+--------------------------------------------------------------------------------
+Total                                               18 MB/s | 7.3 MB  00:00     
+Running transaction check
+Running transaction test
+Transaction test succeeded
+Running transaction
+  Installing : http-parser-2.7.1-5.el7_4.x86_64                             1/4 
+  Installing : 1:libuv-1.10.2-1.el7.x86_64                                  2/4 
+  Installing : 1:npm-3.10.10-1.6.12.3.1.el7.x86_64                          3/4 
+  Installing : 1:nodejs-6.12.3-1.el7.x86_64                                 4/4 
+  Verifying  : 1:libuv-1.10.2-1.el7.x86_64                                  1/4 
+  Verifying  : 1:npm-3.10.10-1.6.12.3.1.el7.x86_64                          2/4 
+  Verifying  : http-parser-2.7.1-5.el7_4.x86_64                             3/4 
+  Verifying  : 1:nodejs-6.12.3-1.el7.x86_64                                 4/4 
+
+Installed:
+  npm.x86_64 1:3.10.10-1.6.12.3.1.el7                                           
+
+Dependency Installed:
+  http-parser.x86_64 0:2.7.1-5.el7_4         libuv.x86_64 1:1.10.2-1.el7        
+  nodejs.x86_64 1:6.12.3-1.el7              
+
+Complete!
++ sudo npm install
+
+> nodemon@1.17.1 postinstall /home/chikn/jenkins/workspace/git-build/node_modules/nodemon
+> node -e "console.log('\u001b[32mLove nodemon? You can now support the project via the open collective:\u001b[22m\u001b[39m\n > \u001b[96m\u001b[1mhttps://opencollective.com/nodemon/donate\u001b[0m\n')" || exit 0
+
+[32mLove nodemon? You can now support the project via the open collective:[22m[39m
+ > [96m[1mhttps://opencollective.com/nodemon/donate[0m
+
+node-todo-api@1.0.0 /home/chikn/jenkins/workspace/git-build
+├─┬ body-parser@1.18.2 
+│ ├── bytes@3.0.0 
+│ ├── content-type@1.0.4 
+│ ├── debug@2.6.9 
+│ ├── depd@1.1.2 
+│ ├─┬ http-errors@1.6.2 
+│ │ ├── depd@1.1.1 
+│ │ ├── inherits@2.0.3 
+│ │ ├── setprototypeof@1.0.3 
+│ │ └── statuses@1.4.0 
+│ ├── iconv-lite@0.4.19 
+│ ├─┬ on-finished@2.3.0 
+│ │ └── ee-first@1.1.1 
+│ ├── qs@6.5.1 
+│ ├─┬ raw-body@2.3.2 
+│ │ └── unpipe@1.0.0 
+│ └─┬ type-is@1.6.16 
+│   ├── media-typer@0.3.0 
+│   └─┬ mime-types@2.1.18 
+│     └── mime-db@1.33.0 
+├─┬ cors@2.8.4 
+│ ├── object-assign@4.1.1 
+│ └── vary@1.1.2 
+├─┬ expect@1.20.2 
+│ ├─┬ define-properties@1.1.2 
+│ │ └── foreach@2.0.5 
+│ ├─┬ has@1.0.1 
+│ │ └── function-bind@1.1.1 
+│ ├─┬ is-equal@1.5.5 
+│ │ ├── is-arrow-function@2.0.3 
+│ │ ├── is-boolean-object@1.0.0 
+│ │ ├── is-callable@1.1.3 
+│ │ ├── is-date-object@1.0.1 
+│ │ ├── is-generator-function@1.0.7 
+│ │ ├── is-number-object@1.0.3 
+│ │ ├── is-string@1.0.4 
+│ │ ├── is-symbol@1.0.1 
+│ │ └─┬ object.entries@1.0.4 
+│ │   └─┬ es-abstract@1.10.0 
+│ │     └── es-to-primitive@1.1.1 
+│ ├── is-regex@1.0.4 
+│ ├── object-inspect@1.5.0 
+│ ├── object-keys@1.0.11 
+│ └── tmatch@2.0.1 
+├─┬ express@4.16.2 
+│ ├─┬ accepts@1.3.5 
+│ │ └── negotiator@0.6.1 
+│ ├── array-flatten@1.1.1 
+│ ├── content-disposition@0.5.2 
+│ ├── cookie@0.3.1 
+│ ├── cookie-signature@1.0.6 
+│ ├── encodeurl@1.0.2 
+│ ├── escape-html@1.0.3 
+│ ├── etag@1.8.1 
+│ ├─┬ finalhandler@1.1.0 
+│ │ └── statuses@1.3.1 
+│ ├── fresh@0.5.2 
+│ ├── merge-descriptors@1.0.1 
+│ ├── methods@1.1.2 
+│ ├── parseurl@1.3.2 
+│ ├── path-to-regexp@0.1.7 
+│ ├─┬ proxy-addr@2.0.3 
+│ │ ├── forwarded@0.1.2 
+│ │ └── ipaddr.js@1.6.0 
+│ ├── range-parser@1.2.0 
+│ ├── safe-buffer@5.1.1 
+│ ├─┬ send@0.16.1 
+│ │ ├── destroy@1.0.4 
+│ │ ├── mime@1.4.1 
+│ │ └── statuses@1.3.1 
+│ ├── serve-static@1.13.1 
+│ ├── setprototypeof@1.1.0 
+│ ├── statuses@1.3.1 
+│ └── utils-merge@1.0.1 
+├── lodash@4.17.5 
+├─┬ mocha@3.5.3 
+│ ├── browser-stdout@1.3.0 
+│ ├─┬ commander@2.9.0 
+│ │ └── graceful-readlink@1.0.1 
+│ ├── debug@2.6.8 
+│ ├── diff@3.2.0 
+│ ├── escape-string-regexp@1.0.5 
+│ ├─┬ glob@7.1.1 
+│ │ ├── fs.realpath@1.0.0 
+│ │ ├─┬ inflight@1.0.6 
+│ │ │ └── wrappy@1.0.2 
+│ │ ├── once@1.4.0 
+│ │ └── path-is-absolute@1.0.1 
+│ ├── growl@1.9.2 
+│ ├── he@1.1.1 
+│ ├── json3@3.3.2 
+│ ├─┬ lodash.create@3.1.1 
+│ │ ├─┬ lodash._baseassign@3.2.0 
+│ │ │ ├── lodash._basecopy@3.0.1 
+│ │ │ └─┬ lodash.keys@3.1.2 
+│ │ │   ├── lodash._getnative@3.9.1 
+│ │ │   ├── lodash.isarguments@3.1.0 
+│ │ │   └── lodash.isarray@3.0.4 
+│ │ ├── lodash._basecreate@3.0.3 
+│ │ └── lodash._isiterateecall@3.0.9 
+│ ├─┬ mkdirp@0.5.1 
+│ │ └── minimist@0.0.8 
+│ └─┬ supports-color@3.1.2 
+│   └── has-flag@1.0.0 
+├─┬ mongodb@2.2.35 
+│ ├── es6-promise@3.2.1 
+│ ├─┬ mongodb-core@2.1.19 
+│ │ └─┬ require_optional@1.0.1 
+│ │   └── resolve-from@2.0.0 
+│ └─┬ readable-stream@2.2.7 
+│   ├── buffer-shims@1.0.0 
+│   ├── core-util-is@1.0.2 
+│   ├── isarray@1.0.0 
+│   ├── process-nextick-args@1.0.7 
+│   ├── string_decoder@1.0.3 
+│   └── util-deprecate@1.0.2 
+├─┬ mongoose@4.13.11 
+│ ├── async@2.1.4 
+│ ├── bson@1.0.5 
+│ ├── hooks-fixed@2.0.2 
+│ ├── kareem@1.5.0 
+│ ├── lodash.get@4.4.2 
+│ ├─┬ mongodb@2.2.34 
+│ │ └── mongodb-core@2.1.18 
+│ ├── mpath@0.3.0 
+│ ├── mpromise@0.5.5 
+│ ├─┬ mquery@2.3.3 
+│ │ ├── bluebird@3.5.0 
+│ │ └── sliced@0.0.5 
+│ ├── ms@2.0.0 
+│ ├── muri@1.3.0 
+│ ├── regexp-clone@0.0.1 
+│ └── sliced@1.0.1 
+├─┬ nodemon@1.17.1 
+│ ├─┬ chokidar@2.0.2 
+│ │ ├─┬ anymatch@2.0.0 
+│ │ │ └─┬ micromatch@3.1.9 
+│ │ │   ├── arr-diff@4.0.0 
+│ │ │   ├── define-property@2.0.2 
+│ │ │   ├─┬ extend-shallow@3.0.2 
+│ │ │   │ ├── assign-symbols@1.0.0 
+│ │ │   │ └─┬ is-extendable@1.0.1 
+│ │ │   │   └── is-plain-object@2.0.4 
+│ │ │   ├─┬ extglob@2.0.4 
+│ │ │   │ ├── define-property@1.0.0 
+│ │ │   │ ├─┬ expand-brackets@2.1.4 
+│ │ │   │ │ ├─┬ define-property@0.2.5 
+│ │ │   │ │ │ └─┬ is-descriptor@0.1.6 
+│ │ │   │ │ │   ├─┬ is-accessor-descriptor@0.1.6 
+│ │ │   │ │ │   │ └── kind-of@3.2.2 
+│ │ │   │ │ │   ├─┬ is-data-descriptor@0.1.4 
+│ │ │   │ │ │   │ └── kind-of@3.2.2 
+│ │ │   │ │ │   └── kind-of@5.1.0 
+│ │ │   │ │ ├── extend-shallow@2.0.1 
+│ │ │   │ │ └── posix-character-classes@0.1.1 
+│ │ │   │ └── extend-shallow@2.0.1 
+│ │ │   ├── fragment-cache@0.2.1 
+│ │ │   ├─┬ nanomatch@1.2.9 
+│ │ │   │ ├─┬ is-odd@2.0.0 
+│ │ │   │ │ └── is-number@4.0.0 
+│ │ │   │ └── is-windows@1.0.2 
+│ │ │   ├── object.pick@1.3.0 
+│ │ │   └── regex-not@1.0.2 
+│ │ ├── async-each@1.0.1 
+│ │ ├─┬ braces@2.3.1 
+│ │ │ ├── arr-flatten@1.1.0 
+│ │ │ ├── array-unique@0.3.2 
+│ │ │ ├─┬ define-property@1.0.0 
+│ │ │ │ └─┬ is-descriptor@1.0.2 
+│ │ │ │   ├── is-accessor-descriptor@1.0.0 
+│ │ │ │   └── is-data-descriptor@1.0.0 
+│ │ │ ├─┬ extend-shallow@2.0.1 
+│ │ │ │ └── is-extendable@0.1.1 
+│ │ │ ├─┬ fill-range@4.0.0 
+│ │ │ │ ├── extend-shallow@2.0.1 
+│ │ │ │ ├─┬ is-number@3.0.0 
+│ │ │ │ │ └─┬ kind-of@3.2.2 
+│ │ │ │ │   └── is-buffer@1.1.6 
+│ │ │ │ ├── repeat-string@1.6.1 
+│ │ │ │ └── to-regex-range@2.1.1 
+│ │ │ ├── isobject@3.0.1 
+│ │ │ ├── kind-of@6.0.2 
+│ │ │ ├── repeat-element@1.1.2 
+│ │ │ ├─┬ snapdragon@0.8.1 
+│ │ │ │ ├─┬ base@0.11.2 
+│ │ │ │ │ ├─┬ cache-base@1.0.1 
+│ │ │ │ │ │ ├─┬ collection-visit@1.0.0 
+│ │ │ │ │ │ │ ├── map-visit@1.0.0 
+│ │ │ │ │ │ │ └── object-visit@1.0.1 
+│ │ │ │ │ │ ├── get-value@2.0.6 
+│ │ │ │ │ │ ├─┬ has-value@1.0.0 
+│ │ │ │ │ │ │ └─┬ has-values@1.0.0 
+│ │ │ │ │ │ │   └── kind-of@4.0.0 
+│ │ │ │ │ │ ├─┬ set-value@2.0.0 
+│ │ │ │ │ │ │ └── extend-shallow@2.0.1 
+│ │ │ │ │ │ ├─┬ to-object-path@0.3.0 
+│ │ │ │ │ │ │ └── kind-of@3.2.2 
+│ │ │ │ │ │ ├─┬ union-value@1.0.0 
+│ │ │ │ │ │ │ └─┬ set-value@0.4.3 
+│ │ │ │ │ │ │   └── extend-shallow@2.0.1 
+│ │ │ │ │ │ └─┬ unset-value@1.0.0 
+│ │ │ │ │ │   └─┬ has-value@0.3.1 
+│ │ │ │ │ │     ├── has-values@0.1.4 
+│ │ │ │ │ │     └── isobject@2.1.0 
+│ │ │ │ │ ├─┬ class-utils@0.3.6 
+│ │ │ │ │ │ ├── arr-union@3.1.0 
+│ │ │ │ │ │ ├─┬ define-property@0.2.5 
+│ │ │ │ │ │ │ └─┬ is-descriptor@0.1.6 
+│ │ │ │ │ │ │   ├─┬ is-accessor-descriptor@0.1.6 
+│ │ │ │ │ │ │   │ └── kind-of@3.2.2 
+│ │ │ │ │ │ │   ├─┬ is-data-descriptor@0.1.4 
+│ │ │ │ │ │ │   │ └── kind-of@3.2.2 
+│ │ │ │ │ │ │   └── kind-of@5.1.0 
+│ │ │ │ │ │ └─┬ static-extend@0.1.2 
+│ │ │ │ │ │   ├─┬ define-property@0.2.5 
+│ │ │ │ │ │   │ └─┬ is-descriptor@0.1.6 
+│ │ │ │ │ │   │   ├─┬ is-accessor-descriptor@0.1.6 
+│ │ │ │ │ │   │   │ └── kind-of@3.2.2 
+│ │ │ │ │ │   │   ├─┬ is-data-descriptor@0.1.4 
+│ │ │ │ │ │   │   │ └── kind-of@3.2.2 
+│ │ │ │ │ │   │   └── kind-of@5.1.0 
+│ │ │ │ │ │   └─┬ object-copy@0.1.0 
+│ │ │ │ │ │     ├── copy-descriptor@0.1.1 
+│ │ │ │ │ │     ├─┬ define-property@0.2.5 
+│ │ │ │ │ │     │ └─┬ is-descriptor@0.1.6 
+│ │ │ │ │ │     │   ├── is-accessor-descriptor@0.1.6 
+│ │ │ │ │ │     │   ├── is-data-descriptor@0.1.4 
+│ │ │ │ │ │     │   └── kind-of@5.1.0 
+│ │ │ │ │ │     └── kind-of@3.2.2 
+│ │ │ │ │ ├── define-property@1.0.0 
+│ │ │ │ │ ├─┬ mixin-deep@1.3.1 
+│ │ │ │ │ │ ├── for-in@1.0.2 
+│ │ │ │ │ │ └── is-extendable@1.0.1 
+│ │ │ │ │ └── pascalcase@0.1.1 
+│ │ │ │ ├─┬ define-property@0.2.5 
+│ │ │ │ │ └─┬ is-descriptor@0.1.6 
+│ │ │ │ │   ├─┬ is-accessor-descriptor@0.1.6 
+│ │ │ │ │   │ └── kind-of@3.2.2 
+│ │ │ │ │   ├─┬ is-data-descriptor@0.1.4 
+│ │ │ │ │   │ └── kind-of@3.2.2 
+│ │ │ │ │   └── kind-of@5.1.0 
+│ │ │ │ ├── extend-shallow@2.0.1 
+│ │ │ │ ├── map-cache@0.2.2 
+│ │ │ │ ├── source-map@0.5.7 
+│ │ │ │ ├─┬ source-map-resolve@0.5.1 
+│ │ │ │ │ ├── atob@2.0.3 
+│ │ │ │ │ ├── decode-uri-component@0.2.0 
+│ │ │ │ │ ├── resolve-url@0.2.1 
+│ │ │ │ │ ├── source-map-url@0.4.0 
+│ │ │ │ │ └── urix@0.1.0 
+│ │ │ │ └─┬ use@2.0.2 
+│ │ │ │   ├─┬ define-property@0.2.5 
+│ │ │ │   │ └─┬ is-descriptor@0.1.6 
+│ │ │ │   │   ├─┬ is-accessor-descriptor@0.1.6 
+│ │ │ │   │   │ └── kind-of@3.2.2 
+│ │ │ │   │   ├─┬ is-data-descriptor@0.1.4 
+│ │ │ │   │   │ └── kind-of@3.2.2 
+│ │ │ │   │   └── kind-of@5.1.0 
+│ │ │ │   └─┬ lazy-cache@2.0.2 
+│ │ │ │     └── set-getter@0.1.0 
+│ │ │ ├─┬ snapdragon-node@2.1.1 
+│ │ │ │ ├── define-property@1.0.0 
+│ │ │ │ └─┬ snapdragon-util@3.0.1 
+│ │ │ │   └── kind-of@3.2.2 
+│ │ │ ├── split-string@3.1.0 
+│ │ │ └─┬ to-regex@3.0.2 
+│ │ │   └─┬ safe-regex@1.1.0 
+│ │ │     └── ret@0.1.15 
+│ │ ├─┬ glob-parent@3.1.0 
+│ │ │ ├── is-glob@3.1.0 
+│ │ │ └── path-dirname@1.0.2 
+│ │ ├─┬ is-binary-path@1.0.1 
+│ │ │ └── binary-extensions@1.11.0 
+│ │ ├─┬ is-glob@4.0.0 
+│ │ │ └── is-extglob@2.1.1 
+│ │ ├─┬ normalize-path@2.1.1 
+│ │ │ └── remove-trailing-separator@1.1.0 
+│ │ ├─┬ readdirp@2.1.0 
+│ │ │ ├── graceful-fs@4.1.11 
+│ │ │ └── set-immediate-shim@1.0.1 
+│ │ └── upath@1.0.4 
+│ ├── debug@3.1.0 
+│ ├── ignore-by-default@1.0.1 
+│ ├─┬ minimatch@3.0.4 
+│ │ └─┬ brace-expansion@1.1.11 
+│ │   ├── balanced-match@1.0.0 
+│ │   └── concat-map@0.0.1 
+│ ├─┬ pstree.remy@1.1.0 
+│ │ └─┬ ps-tree@1.1.0 
+│ │   └─┬ event-stream@3.3.4 
+│ │     ├── duplexer@0.1.1 
+│ │     ├── from@0.1.7 
+│ │     ├── map-stream@0.1.0 
+│ │     ├── pause-stream@0.0.11 
+│ │     ├── split@0.3.3 
+│ │     ├── stream-combiner@0.0.4 
+│ │     └── through@2.3.8 
+│ ├── semver@5.5.0 
+│ ├─┬ supports-color@5.2.0 
+│ │ └── has-flag@3.0.0 
+│ ├─┬ touch@3.1.0 
+│ │ └─┬ nopt@1.0.10 
+│ │   └── abbrev@1.1.1 
+│ ├── undefsafe@2.0.2 
+│ └─┬ update-notifier@2.3.0 
+│   ├─┬ boxen@1.3.0 
+│   │ ├── ansi-align@2.0.0 
+│   │ ├── camelcase@4.1.0 
+│   │ ├── cli-boxes@1.0.0 
+│   │ ├─┬ string-width@2.1.1 
+│   │ │ ├── is-fullwidth-code-point@2.0.0 
+│   │ │ └─┬ strip-ansi@4.0.0 
+│   │ │   └── ansi-regex@3.0.0 
+│   │ ├─┬ term-size@1.2.0 
+│   │ │ └─┬ execa@0.7.0 
+│   │ │   ├─┬ cross-spawn@5.1.0 
+│   │ │   │ ├─┬ lru-cache@4.1.1 
+│   │ │   │ │ ├── pseudomap@1.0.2 
+│   │ │   │ │ └── yallist@2.1.2 
+│   │ │   │ ├─┬ shebang-command@1.2.0 
+│   │ │   │ │ └── shebang-regex@1.0.0 
+│   │ │   │ └─┬ which@1.3.0 
+│   │ │   │   └── isexe@2.0.0 
+│   │ │   ├── get-stream@3.0.0 
+│   │ │   ├── is-stream@1.1.0 
+│   │ │   ├─┬ npm-run-path@2.0.2 
+│   │ │   │ └── path-key@2.0.1 
+│   │ │   ├── p-finally@1.0.0 
+│   │ │   └── strip-eof@1.0.0 
+│   │ └── widest-line@2.0.0 
+│   ├─┬ chalk@2.3.1 
+│   │ ├─┬ ansi-styles@3.2.0 
+│   │ │ └─┬ color-convert@1.9.1 
+│   │ │   └── color-name@1.1.3 
+│   │ └─┬ supports-color@5.2.0 
+│   │   └── has-flag@3.0.0 
+│   ├─┬ configstore@3.1.1 
+│   │ ├─┬ dot-prop@4.2.0 
+│   │ │ └── is-obj@1.0.1 
+│   │ ├─┬ make-dir@1.2.0 
+│   │ │ └── pify@3.0.0 
+│   │ ├─┬ unique-string@1.0.0 
+│   │ │ └── crypto-random-string@1.0.0 
+│   │ └─┬ write-file-atomic@2.3.0 
+│   │   ├── imurmurhash@0.1.4 
+│   │   └── signal-exit@3.0.2 
+│   ├── import-lazy@2.1.0 
+│   ├─┬ is-installed-globally@0.1.0 
+│   │ ├─┬ global-dirs@0.1.1 
+│   │ │ └── ini@1.3.5 
+│   │ └─┬ is-path-inside@1.0.1 
+│   │   └── path-is-inside@1.0.2 
+│   ├── is-npm@1.0.0 
+│   ├─┬ latest-version@3.1.0 
+│   │ └─┬ package-json@4.0.1 
+│   │   ├─┬ got@6.7.1 
+│   │   │ ├─┬ create-error-class@3.0.2 
+│   │   │ │ └── capture-stack-trace@1.0.0 
+│   │   │ ├── duplexer3@0.1.4 
+│   │   │ ├── is-redirect@1.0.0 
+│   │   │ ├── is-retry-allowed@1.1.0 
+│   │   │ ├── lowercase-keys@1.0.0 
+│   │   │ ├── timed-out@4.0.1 
+│   │   │ ├── unzip-response@2.0.1 
+│   │   │ └─┬ url-parse-lax@1.0.0 
+│   │   │   └── prepend-http@1.0.4 
+│   │   ├─┬ registry-auth-token@3.3.2 
+│   │   │ └─┬ rc@1.2.5 
+│   │   │   ├── deep-extend@0.4.2 
+│   │   │   ├── minimist@1.2.0 
+│   │   │   └── strip-json-comments@2.0.1 
+│   │   └── registry-url@3.1.0 
+│   ├── semver-diff@2.1.0 
+│   └── xdg-basedir@3.0.0 
+└─┬ supertest@2.0.1 
+  └─┬ superagent@2.3.0 
+    ├── component-emitter@1.2.1 
+    ├── cookiejar@2.1.1 
+    ├── extend@3.0.1 
+    ├─┬ form-data@1.0.0-rc4 
+    │ ├── async@1.5.2 
+    │ └─┬ combined-stream@1.0.6 
+    │   └── delayed-stream@1.0.0 
+    └── formidable@1.1.1 
+
+npm WARN optional SKIPPING OPTIONAL DEPENDENCY: fsevents@^1.0.0 (node_modules/chokidar/node_modules/fsevents):
+npm WARN notsup SKIPPING OPTIONAL DEPENDENCY: Unsupported platform for fsevents@1.1.3: wanted {"os":"darwin","arch":"any"} (current: {"os":"linux","arch":"x64"})
+npm WARN node-todo-api@1.0.0 No description
+npm WARN node-todo-api@1.0.0 No repository field.
++ sudo node server/server.js
+(node:2544) DeprecationWarning: `open()` is deprecated in mongoose >= 4.11.0, use `openUri()` instead, or set the `useMongoClient` option if using `connect()` or `createConnection()`. See http://mongoosejs.com/docs/connections.html#use-mongo-client
+Started up at port 3000
+Build was aborted
+Aborted by [8mha:////4NpElINbBORbVkPcQsOEdSagCW4edM3FdZg7wRnbm5B+AAAAmh+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAyWEgY+/dLi1CL9osSsUr38gmIAKwHtocMAAAA=[0mraju
+Finished: ABORTED

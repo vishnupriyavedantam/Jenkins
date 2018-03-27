@@ -1,0 +1,30 @@
+Started by user [8mha:////4CmxTz33j52/JKdJy1Lt7Xj43LMfbPi10dVPMxZ7t8ixAAAAlx+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAzREgZu/dLi1CL9xJTczDwAwD7+acAAAAA=[0mvishnu priya vedantam
+Building remotely on [8mha:////4BY/bhOwoWv6/QtocEYzjpy7I8Sf96CKtwfOnbD18ZGRAAAAnR+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAz2EgZB/eT83ILSktQi/fTkAt3EggIAp5lfF8YAAAA=[0mgcp-app in workspace /home/rajuops1/jenkins/workspace/build
+ > git rev-parse --is-inside-work-tree # timeout=10
+Fetching changes from the remote Git repository
+ > git config remote.origin.url https://rajuops1@bitbucket.org/maxotechteam/ccst-front.git # timeout=10
+Fetching upstream changes from https://rajuops1@bitbucket.org/maxotechteam/ccst-front.git
+ > git --version # timeout=10
+using GIT_ASKPASS to set credentials 
+ > git fetch --tags --progress https://rajuops1@bitbucket.org/maxotechteam/ccst-front.git +refs/heads/*:refs/remotes/origin/*
+ > git rev-parse refs/remotes/origin/dev^{commit} # timeout=10
+ > git rev-parse refs/remotes/origin/origin/dev^{commit} # timeout=10
+Checking out Revision 882a5022aad8fe97f76cbf566a30f6c27bc24bc8 (refs/remotes/origin/dev)
+ > git config core.sparsecheckout # timeout=10
+ > git checkout -f 882a5022aad8fe97f76cbf566a30f6c27bc24bc8
+Commit message: "package.json edited online with Bitbucket"
+ > git rev-list --no-walk 882a5022aad8fe97f76cbf566a30f6c27bc24bc8 # timeout=10
+[build] $ /bin/sh -xe /tmp/jenkins6202499163718458714.sh
++ sudo yum install -y npm
+Loaded plugins: fastestmirror
+Loading mirror speeds from cached hostfile
+ * base: mirror.tzulo.com
+ * epel: mirror.steadfast.net
+ * extras: mirrors.gigenet.com
+ * updates: mirror.tzulo.com
+Package 1:npm-3.10.10-1.6.12.3.1.el7.x86_64 already installed and latest version
+Nothing to do
++ sudo npm install -g @angular/cli
+sudo: npm: command not found
+Build step 'Execute shell' marked build as failure
+Finished: FAILURE

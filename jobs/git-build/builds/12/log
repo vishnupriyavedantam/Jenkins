@@ -1,0 +1,57 @@
+Started by BitBucket push by rajuops1
+Started by BitBucket push by rajuops1
+Building remotely on [8mha:////4K918rZ5LYbNPRMScxjX3g+MhEkqJIB5DQHUGB+LgPSLAAAAnR+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAwOoBn6yfm5BaUlqUX6ufl56fm6KUkA+FA9kccAAAA=[0mmongo-db in workspace /home/chikn/jenkins/workspace/git-build
+ > git rev-parse --is-inside-work-tree # timeout=10
+Fetching changes from the remote Git repository
+ > git config remote.origin.url https://rajuops1@bitbucket.org/rajuops1/ccst-angular.git # timeout=10
+Fetching upstream changes from https://rajuops1@bitbucket.org/rajuops1/ccst-angular.git
+ > git --version # timeout=10
+using GIT_ASKPASS to set credentials 
+ > git fetch --tags --progress https://rajuops1@bitbucket.org/rajuops1/ccst-angular.git +refs/heads/*:refs/remotes/origin/*
+ > git rev-parse refs/remotes/origin/dev^{commit} # timeout=10
+ > git rev-parse refs/remotes/origin/origin/dev^{commit} # timeout=10
+Checking out Revision 7dfa6cdd34b32a88134b6eaf90fa4d0f9bf17a79 (refs/remotes/origin/dev)
+ > git config core.sparsecheckout # timeout=10
+ > git checkout -f 7dfa6cdd34b32a88134b6eaf90fa4d0f9bf17a79
+Commit message: "mongoose.js edited online with Bitbucket"
+ > git rev-list --no-walk d01302f1ccfeed57949a6b5a2e684853993e71ce # timeout=10
+[git-build] $ /bin/sh -xe /tmp/jenkins7978773462892344768.sh
++ sudo yum install -y npm
+Loaded plugins: fastestmirror
+Loading mirror speeds from cached hostfile
+ * base: repos-va.psychz.net
+ * epel: mirror.cogentco.com
+ * extras: mirrors.advancedhosters.com
+ * updates: mirror.ash.fastserv.com
+Package 1:npm-3.10.10-1.6.12.3.1.el7.x86_64 already installed and latest version
+Nothing to do
++ sudo npm install
+npm WARN optional SKIPPING OPTIONAL DEPENDENCY: fsevents@^1.0.0 (node_modules/chokidar/node_modules/fsevents):
+npm WARN notsup SKIPPING OPTIONAL DEPENDENCY: Unsupported platform for fsevents@1.1.3: wanted {"os":"darwin","arch":"any"} (current: {"os":"linux","arch":"x64"})
+npm WARN node-todo-api@1.0.0 No description
+npm WARN node-todo-api@1.0.0 No repository field.
++ sudo node server/server.js
+(node:2976) DeprecationWarning: `open()` is deprecated in mongoose >= 4.11.0, use `openUri()` instead, or set the `useMongoClient` option if using `connect()` or `createConnection()`. See http://mongoosejs.com/docs/connections.html#use-mongo-client
+events.js:160
+      throw er; // Unhandled 'error' event
+      ^
+
+Error: listen EADDRINUSE :::3000
+    at Object.exports._errnoException (util.js:1020:11)
+    at exports._exceptionWithHostPort (util.js:1043:20)
+    at Server._listen2 (net.js:1262:14)
+    at listen (net.js:1298:10)
+    at Server.listen (net.js:1394:5)
+    at EventEmitter.listen (/home/chikn/jenkins/workspace/git-build/node_modules/express/lib/application.js:618:24)
+    at Object.<anonymous> (/home/chikn/jenkins/workspace/git-build/server/server.js:78:5)
+    at Module._compile (module.js:570:32)
+    at Object.Module._extensions..js (module.js:579:10)
+    at Module.load (module.js:487:32)
+    at tryModuleLoad (module.js:446:12)
+    at Function.Module._load (module.js:438:3)
+    at Module.runMain (module.js:604:10)
+    at run (bootstrap_node.js:383:7)
+    at startup (bootstrap_node.js:149:9)
+    at bootstrap_node.js:496:3
+Build step 'Execute shell' marked build as failure
+Finished: FAILURE

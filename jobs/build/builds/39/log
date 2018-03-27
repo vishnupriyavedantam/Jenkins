@@ -1,0 +1,1305 @@
+Started by user [8mha:////4NpElINbBORbVkPcQsOEdSagCW4edM3FdZg7wRnbm5B+AAAAmh+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAyWEgY+/dLi1CL9osSsUr38gmIAKwHtocMAAAA=[0mraju
+Building remotely on [8mha:////4BY/bhOwoWv6/QtocEYzjpy7I8Sf96CKtwfOnbD18ZGRAAAAnR+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAz2EgZB/eT83ILSktQi/fTkAt3EggIAp5lfF8YAAAA=[0mgcp-app in workspace /home/rajuops1/jenkins/workspace/build
+Cloning the remote Git repository
+Cloning repository https://rajuops1@bitbucket.org/rajuops1/ccst-main.git
+ > git init /home/rajuops1/jenkins/workspace/build # timeout=10
+Fetching upstream changes from https://rajuops1@bitbucket.org/rajuops1/ccst-main.git
+ > git --version # timeout=10
+using GIT_ASKPASS to set credentials 
+ > git fetch --tags --progress https://rajuops1@bitbucket.org/rajuops1/ccst-main.git +refs/heads/*:refs/remotes/origin/*
+ > git config remote.origin.url https://rajuops1@bitbucket.org/rajuops1/ccst-main.git # timeout=10
+ > git config --add remote.origin.fetch +refs/heads/*:refs/remotes/origin/* # timeout=10
+ > git config remote.origin.url https://rajuops1@bitbucket.org/rajuops1/ccst-main.git # timeout=10
+Fetching upstream changes from https://rajuops1@bitbucket.org/rajuops1/ccst-main.git
+using GIT_ASKPASS to set credentials 
+ > git fetch --tags --progress https://rajuops1@bitbucket.org/rajuops1/ccst-main.git +refs/heads/*:refs/remotes/origin/*
+ > git rev-parse refs/remotes/origin/dev^{commit} # timeout=10
+ > git rev-parse refs/remotes/origin/origin/dev^{commit} # timeout=10
+Checking out Revision c93962acb65d979a4fba7ba0e0d8b25ac830935d (refs/remotes/origin/dev)
+ > git config core.sparsecheckout # timeout=10
+ > git checkout -f c93962acb65d979a4fba7ba0e0d8b25ac830935d
+Commit message: "first commit"
+ > git rev-list --no-walk c93962acb65d979a4fba7ba0e0d8b25ac830935d # timeout=10
+[build] $ /bin/sh -xe /tmp/jenkins4520364356790246293.sh
++ sudo yum install -y npm
+Loaded plugins: fastestmirror
+Loading mirror speeds from cached hostfile
+ * base: ftpmirror.your.org
+ * epel: mirror.steadfast.net
+ * extras: mirror.steadfast.net
+ * updates: centos.mirrors.tds.net
+Package 1:npm-3.10.10-1.6.12.3.1.el7.x86_64 already installed and latest version
+Nothing to do
++ sudo npm install -g @angular/cli
+/usr/bin/ng -> /usr/lib/node_modules/@angular/cli/bin/ng
+/usr/lib
+└── @angular/cli@1.7.2 
+
+npm WARN optional SKIPPING OPTIONAL DEPENDENCY: fsevents@^1.0.0 (node_modules/@angular/cli/node_modules/chokidar/node_modules/fsevents):
+npm WARN notsup SKIPPING OPTIONAL DEPENDENCY: Unsupported platform for fsevents@1.1.3: wanted {"os":"darwin","arch":"any"} (current: {"os":"linux","arch":"x64"})
+npm WARN optional SKIPPING OPTIONAL DEPENDENCY: fsevents@^1.0.0 (node_modules/@angular/cli/node_modules/watchpack/node_modules/chokidar/node_modules/fsevents):
+npm WARN notsup SKIPPING OPTIONAL DEPENDENCY: Unsupported platform for fsevents@1.1.3: wanted {"os":"darwin","arch":"any"} (current: {"os":"linux","arch":"x64"})
+npm WARN optional SKIPPING OPTIONAL DEPENDENCY: fsevents@^1.0.0 (node_modules/@angular/cli/node_modules/webpack-dev-server/node_modules/chokidar/node_modules/fsevents):
+npm WARN notsup SKIPPING OPTIONAL DEPENDENCY: Unsupported platform for fsevents@1.1.3: wanted {"os":"darwin","arch":"any"} (current: {"os":"linux","arch":"x64"})
++ npm install
+npm WARN prefer global node-gyp@3.6.2 should be installed with -g
+
+> node-sass@4.7.2 install /home/rajuops1/jenkins/workspace/build/node_modules/node-sass
+> node scripts/install.js
+
+Cached binary found at /home/rajuops1/.npm/node-sass/4.7.2/linux-x64-48_binding.node
+
+> uglifyjs-webpack-plugin@0.4.6 postinstall /home/rajuops1/jenkins/workspace/build/node_modules/webpack/node_modules/uglifyjs-webpack-plugin
+> node lib/post_install.js
+
+
+> node-sass@4.7.2 postinstall /home/rajuops1/jenkins/workspace/build/node_modules/node-sass
+> node scripts/build.js
+
+Binary found at /home/rajuops1/jenkins/workspace/build/node_modules/node-sass/vendor/linux-x64-48/binding.node
+Testing binary
+Binary is fine
+ccstool@0.0.0 /home/rajuops1/jenkins/workspace/build
+├─┬ @angular-devkit/core@0.0.29 
+│ ├─┬ ajv@5.5.2 
+│ │ ├── co@4.6.0 
+│ │ ├── fast-deep-equal@1.1.0 
+│ │ ├── fast-json-stable-stringify@2.0.0 
+│ │ └── json-schema-traverse@0.3.1 
+│ ├─┬ chokidar@1.7.0 
+│ │ ├─┬ anymatch@1.3.2 
+│ │ │ ├─┬ micromatch@2.3.11 
+│ │ │ │ ├─┬ arr-diff@2.0.0 
+│ │ │ │ │ └── arr-flatten@1.1.0 
+│ │ │ │ ├─┬ braces@1.8.5 
+│ │ │ │ │ ├─┬ expand-range@1.8.2 
+│ │ │ │ │ │ └─┬ fill-range@2.2.3 
+│ │ │ │ │ │   ├── is-number@2.1.0 
+│ │ │ │ │ │   ├── isobject@2.1.0 
+│ │ │ │ │ │   └─┬ randomatic@1.1.7 
+│ │ │ │ │ │     ├─┬ is-number@3.0.0 
+│ │ │ │ │ │     │ └── kind-of@3.2.2 
+│ │ │ │ │ │     └── kind-of@4.0.0 
+│ │ │ │ │ ├── preserve@0.2.0 
+│ │ │ │ │ └── repeat-element@1.1.2 
+│ │ │ │ ├─┬ expand-brackets@0.1.5 
+│ │ │ │ │ └── is-posix-bracket@0.1.1 
+│ │ │ │ ├── extglob@0.3.2 
+│ │ │ │ ├── filename-regex@2.0.1 
+│ │ │ │ ├─┬ object.omit@2.0.1 
+│ │ │ │ │ └── for-own@0.1.5 
+│ │ │ │ ├─┬ parse-glob@3.0.4 
+│ │ │ │ │ ├── glob-base@0.3.0 
+│ │ │ │ │ └── is-dotfile@1.0.3 
+│ │ │ │ └─┬ regex-cache@0.4.4 
+│ │ │ │   └─┬ is-equal-shallow@0.1.3 
+│ │ │ │     └── is-primitive@2.0.0 
+│ │ │ └─┬ normalize-path@2.1.1 
+│ │ │   └── remove-trailing-separator@1.1.0 
+│ │ ├── async-each@1.0.1 
+│ │ ├── glob-parent@2.0.0 
+│ │ ├── inherits@2.0.3 
+│ │ ├─┬ is-binary-path@1.0.1 
+│ │ │ └── binary-extensions@1.11.0 
+│ │ ├─┬ is-glob@2.0.1 
+│ │ │ └── is-extglob@1.0.0 
+│ │ ├── path-is-absolute@1.0.1 
+│ │ └─┬ readdirp@2.1.0 
+│ │   └── set-immediate-shim@1.0.1 
+│ └── source-map@0.5.7 
+├─┬ @angular/animations@5.2.7 
+│ └── tslib@1.9.0 
+├── @angular/cdk@5.2.3 
+├─┬ @angular/cli@1.6.3 
+│ ├─┬ @angular-devkit/build-optimizer@0.0.42 
+│ │ └── typescript@2.6.2 
+│ ├── @angular-devkit/schematics@0.0.52 
+│ ├── @ngtools/json-schema@1.1.0 
+│ ├─┬ @ngtools/webpack@1.9.3 
+│ │ ├── enhanced-resolve@3.4.1 
+│ │ ├─┬ magic-string@0.22.4 
+│ │ │ └── vlq@0.2.3 
+│ │ └── tree-kill@1.2.0 
+│ ├─┬ @schematics/angular@0.1.17 
+│ │ └── typescript@2.6.2 
+│ ├─┬ autoprefixer@6.7.7 
+│ │ ├─┬ browserslist@1.7.7 
+│ │ │ └── electron-to-chromium@1.3.34 
+│ │ ├── caniuse-db@1.0.30000810 
+│ │ ├── normalize-range@0.1.2 
+│ │ ├── num2fraction@1.2.2 
+│ │ ├─┬ postcss@5.2.18 
+│ │ │ ├─┬ chalk@1.1.3 
+│ │ │ │ ├── ansi-styles@2.2.1 
+│ │ │ │ └── supports-color@2.0.0 
+│ │ │ ├── js-base64@2.4.3 
+│ │ │ └─┬ supports-color@3.2.3 
+│ │ │   └── has-flag@1.0.0 
+│ │ └── postcss-value-parser@3.3.0 
+│ ├─┬ chalk@2.2.2 
+│ │ ├─┬ ansi-styles@3.2.1 
+│ │ │ └─┬ color-convert@1.9.1 
+│ │ │   └── color-name@1.1.3 
+│ │ ├── escape-string-regexp@1.0.5 
+│ │ └─┬ supports-color@4.5.0 
+│ │   └── has-flag@2.0.0 
+│ ├── circular-dependency-plugin@4.4.0 
+│ ├─┬ common-tags@1.7.2 
+│ │ └─┬ babel-runtime@6.26.0 
+│ │   └── regenerator-runtime@0.11.1 
+│ ├─┬ copy-webpack-plugin@4.5.0 
+│ │ ├─┬ cacache@10.0.4 
+│ │ │ ├── chownr@1.0.1 
+│ │ │ ├─┬ mississippi@2.0.0 
+│ │ │ │ ├─┬ concat-stream@1.6.1 
+│ │ │ │ │ └── typedarray@0.0.6 
+│ │ │ │ ├─┬ duplexify@3.5.4 
+│ │ │ │ │ └── stream-shift@1.0.0 
+│ │ │ │ ├── end-of-stream@1.4.1 
+│ │ │ │ ├── flush-write-stream@1.0.2 
+│ │ │ │ ├── from2@2.3.0 
+│ │ │ │ ├─┬ parallel-transform@1.1.0 
+│ │ │ │ │ └── cyclist@0.2.2 
+│ │ │ │ ├── pump@2.0.1 
+│ │ │ │ ├── pumpify@1.4.0 
+│ │ │ │ ├── stream-each@1.2.2 
+│ │ │ │ └── through2@2.0.3 
+│ │ │ ├─┬ move-concurrently@1.0.1 
+│ │ │ │ ├── aproba@1.2.0 
+│ │ │ │ ├─┬ copy-concurrently@1.0.5 
+│ │ │ │ │ └── iferr@0.1.5 
+│ │ │ │ ├─┬ fs-write-stream-atomic@1.0.10 
+│ │ │ │ │ └── imurmurhash@0.1.4 
+│ │ │ │ └── run-queue@1.0.3 
+│ │ │ ├── promise-inflight@1.0.1 
+│ │ │ ├── ssri@5.2.4 
+│ │ │ ├─┬ unique-filename@1.1.0 
+│ │ │ │ └── unique-slug@2.0.0 
+│ │ │ └── y18n@4.0.0 
+│ │ ├─┬ find-cache-dir@1.0.0 
+│ │ │ ├── commondir@1.0.1 
+│ │ │ ├── make-dir@1.2.0 
+│ │ │ └─┬ pkg-dir@2.0.0 
+│ │ │   └─┬ find-up@2.1.0 
+│ │ │     └─┬ locate-path@2.0.0 
+│ │ │       ├── p-locate@2.0.0 
+│ │ │       └── path-exists@3.0.0 
+│ │ ├─┬ globby@7.1.1 
+│ │ │ ├─┬ array-union@1.0.2 
+│ │ │ │ └── array-uniq@1.0.3 
+│ │ │ ├─┬ dir-glob@2.0.0 
+│ │ │ │ └── path-type@3.0.0 
+│ │ │ ├── ignore@3.3.7 
+│ │ │ └── slash@1.0.0 
+│ │ ├─┬ is-glob@4.0.0 
+│ │ │ └── is-extglob@2.1.1 
+│ │ ├─┬ p-limit@1.2.0 
+│ │ │ └── p-try@1.0.0 
+│ │ └── serialize-javascript@1.4.0 
+│ ├── core-object@3.1.5 
+│ ├─┬ css-loader@0.28.10 
+│ │ ├─┬ icss-utils@2.1.0 
+│ │ │ └─┬ postcss@6.0.19 
+│ │ │   ├── chalk@2.3.2 
+│ │ │   ├── source-map@0.6.1 
+│ │ │   └─┬ supports-color@5.3.0 
+│ │ │     └── has-flag@3.0.0 
+│ │ ├── lodash.camelcase@4.3.0 
+│ │ ├── object-assign@4.1.1 
+│ │ ├─┬ postcss-modules-extract-imports@1.2.0 
+│ │ │ └─┬ postcss@6.0.19 
+│ │ │   ├── chalk@2.3.2 
+│ │ │   ├── source-map@0.6.1 
+│ │ │   └─┬ supports-color@5.3.0 
+│ │ │     └── has-flag@3.0.0 
+│ │ ├─┬ postcss-modules-local-by-default@1.2.0 
+│ │ │ └─┬ postcss@6.0.19 
+│ │ │   ├── chalk@2.3.2 
+│ │ │   ├── source-map@0.6.1 
+│ │ │   └─┬ supports-color@5.3.0 
+│ │ │     └── has-flag@3.0.0 
+│ │ ├─┬ postcss-modules-scope@1.1.0 
+│ │ │ └─┬ postcss@6.0.19 
+│ │ │   ├── chalk@2.3.2 
+│ │ │   ├── source-map@0.6.1 
+│ │ │   └─┬ supports-color@5.3.0 
+│ │ │     └── has-flag@3.0.0 
+│ │ ├─┬ postcss-modules-values@1.3.0 
+│ │ │ ├── icss-replace-symbols@1.1.0 
+│ │ │ └─┬ postcss@6.0.19 
+│ │ │   ├── chalk@2.3.2 
+│ │ │   ├── source-map@0.6.1 
+│ │ │   └─┬ supports-color@5.3.0 
+│ │ │     └── has-flag@3.0.0 
+│ │ └── source-list-map@2.0.0 
+│ ├─┬ cssnano@3.10.0 
+│ │ ├── decamelize@1.2.0 
+│ │ ├── defined@1.0.0 
+│ │ ├─┬ has@1.0.1 
+│ │ │ └── function-bind@1.1.1 
+│ │ ├─┬ postcss-calc@5.3.1 
+│ │ │ ├── postcss-message-helpers@2.0.0 
+│ │ │ └─┬ reduce-css-calc@1.3.0 
+│ │ │   ├── balanced-match@0.4.2 
+│ │ │   ├── math-expression-evaluator@1.2.17 
+│ │ │   └─┬ reduce-function-call@1.0.2 
+│ │ │     └── balanced-match@0.4.2 
+│ │ ├─┬ postcss-colormin@2.2.2 
+│ │ │ └─┬ colormin@1.1.2 
+│ │ │   ├─┬ color@0.11.4 
+│ │ │   │ ├── clone@1.0.3 
+│ │ │   │ └── color-string@0.3.0 
+│ │ │   └── css-color-names@0.0.4 
+│ │ ├── postcss-convert-values@2.6.1 
+│ │ ├── postcss-discard-comments@2.0.4 
+│ │ ├── postcss-discard-duplicates@2.1.0 
+│ │ ├── postcss-discard-empty@2.1.0 
+│ │ ├── postcss-discard-overridden@0.1.1 
+│ │ ├─┬ postcss-discard-unused@2.2.3 
+│ │ │ └── uniqs@2.0.0 
+│ │ ├─┬ postcss-filter-plugins@2.0.2 
+│ │ │ └─┬ uniqid@4.1.1 
+│ │ │   └── macaddress@0.2.8 
+│ │ ├── postcss-merge-idents@2.1.7 
+│ │ ├── postcss-merge-longhand@2.0.2 
+│ │ ├─┬ postcss-merge-rules@2.1.2 
+│ │ │ ├─┬ caniuse-api@1.6.1 
+│ │ │ │ ├── lodash.memoize@4.1.2 
+│ │ │ │ └── lodash.uniq@4.5.0 
+│ │ │ ├─┬ postcss-selector-parser@2.2.3 
+│ │ │ │ ├── flatten@1.0.2 
+│ │ │ │ ├── indexes-of@1.0.1 
+│ │ │ │ └── uniq@1.0.1 
+│ │ │ └── vendors@1.0.1 
+│ │ ├── postcss-minify-font-values@1.0.5 
+│ │ ├── postcss-minify-gradients@1.0.5 
+│ │ ├─┬ postcss-minify-params@1.2.2 
+│ │ │ └── alphanum-sort@1.0.2 
+│ │ ├── postcss-minify-selectors@2.1.1 
+│ │ ├── postcss-normalize-charset@1.1.1 
+│ │ ├─┬ postcss-normalize-url@3.0.8 
+│ │ │ ├── is-absolute-url@2.1.0 
+│ │ │ └─┬ normalize-url@1.9.1 
+│ │ │   ├── prepend-http@1.0.4 
+│ │ │   ├─┬ query-string@4.3.4 
+│ │ │   │ └── strict-uri-encode@1.1.0 
+│ │ │   └─┬ sort-keys@1.1.2 
+│ │ │     └── is-plain-obj@1.1.0 
+│ │ ├── postcss-ordered-values@2.2.3 
+│ │ ├── postcss-reduce-idents@2.4.0 
+│ │ ├── postcss-reduce-initial@1.0.1 
+│ │ ├── postcss-reduce-transforms@1.0.4 
+│ │ ├─┬ postcss-svgo@2.1.6 
+│ │ │ ├─┬ is-svg@2.1.0 
+│ │ │ │ └── html-comment-regex@1.1.1 
+│ │ │ └─┬ svgo@0.7.2 
+│ │ │   ├─┬ coa@1.0.4 
+│ │ │   │ └── q@1.5.1 
+│ │ │   ├─┬ csso@2.3.2 
+│ │ │   │ └─┬ clap@1.2.3 
+│ │ │   │   └─┬ chalk@1.1.3 
+│ │ │   │     ├── ansi-styles@2.2.1 
+│ │ │   │     └── supports-color@2.0.0 
+│ │ │   └── whet.extend@0.9.9 
+│ │ ├── postcss-unique-selectors@2.0.2 
+│ │ └── postcss-zindex@2.2.0 
+│ ├── denodeify@1.2.1 
+│ ├── ember-cli-string-utils@1.1.0 
+│ ├── exports-loader@0.6.4 
+│ ├─┬ extract-text-webpack-plugin@3.0.2 
+│ │ ├── async@2.6.0 
+│ │ └── schema-utils@0.3.0 
+│ ├─┬ file-loader@1.1.11 
+│ │ └─┬ schema-utils@0.4.5 
+│ │   ├── UNMET PEER DEPENDENCY ajv@6.2.0
+│ │   └── ajv-keywords@3.1.0 
+│ ├─┬ fs-extra@4.0.3 
+│ │ ├── jsonfile@4.0.0 
+│ │ └── universalify@0.1.1 
+│ ├─┬ glob@7.1.2 
+│ │ ├── fs.realpath@1.0.0 
+│ │ ├─┬ inflight@1.0.6 
+│ │ │ └── wrappy@1.0.2 
+│ │ └── once@1.4.0 
+│ ├─┬ html-webpack-plugin@2.30.1 
+│ │ ├─┬ html-minifier@3.5.9 
+│ │ │ ├─┬ camel-case@3.0.0 
+│ │ │ │ ├─┬ no-case@2.3.2 
+│ │ │ │ │ └── lower-case@1.1.4 
+│ │ │ │ └── upper-case@1.1.3 
+│ │ │ ├── clean-css@4.1.9 
+│ │ │ ├── he@1.1.1 
+│ │ │ ├─┬ ncname@1.0.0 
+│ │ │ │ └── xml-char-classes@1.0.0 
+│ │ │ ├── param-case@2.1.1 
+│ │ │ ├── relateurl@0.2.7 
+│ │ │ └─┬ uglify-js@3.3.12 
+│ │ │   └── source-map@0.6.1 
+│ │ ├── loader-utils@0.2.17 
+│ │ ├─┬ pretty-error@2.1.1 
+│ │ │ ├─┬ renderkid@2.0.1 
+│ │ │ │ ├─┬ css-select@1.2.0 
+│ │ │ │ │ ├── boolbase@1.0.0 
+│ │ │ │ │ ├── css-what@2.1.0 
+│ │ │ │ │ ├─┬ domutils@1.5.1 
+│ │ │ │ │ │ └─┬ dom-serializer@0.1.0 
+│ │ │ │ │ │   ├── domelementtype@1.1.3 
+│ │ │ │ │ │   └── entities@1.1.1 
+│ │ │ │ │ └── nth-check@1.0.1 
+│ │ │ │ ├─┬ dom-converter@0.1.4 
+│ │ │ │ │ └── utila@0.3.3 
+│ │ │ │ ├─┬ htmlparser2@3.3.0 
+│ │ │ │ │ ├── domelementtype@1.3.0 
+│ │ │ │ │ ├── domhandler@2.1.0 
+│ │ │ │ │ ├── domutils@1.1.6 
+│ │ │ │ │ └─┬ readable-stream@1.0.34 
+│ │ │ │ │   ├── isarray@0.0.1 
+│ │ │ │ │   └── string_decoder@0.10.31 
+│ │ │ │ └── utila@0.3.3 
+│ │ │ └── utila@0.4.0 
+│ │ └── toposort@1.0.6 
+│ ├─┬ istanbul-instrumenter-loader@2.0.0 
+│ │ ├── convert-source-map@1.5.1 
+│ │ ├─┬ istanbul-lib-instrument@1.9.2 
+│ │ │ ├─┬ babel-generator@6.26.1 
+│ │ │ │ ├── babel-messages@6.23.0 
+│ │ │ │ ├─┬ detect-indent@4.0.0 
+│ │ │ │ │ └─┬ repeating@2.0.1 
+│ │ │ │ │   └── is-finite@1.0.2 
+│ │ │ │ ├── jsesc@1.3.0 
+│ │ │ │ └── trim-right@1.0.1 
+│ │ │ ├── babel-template@6.26.0 
+│ │ │ ├─┬ babel-traverse@6.26.0 
+│ │ │ │ ├── globals@9.18.0 
+│ │ │ │ └─┬ invariant@2.2.3 
+│ │ │ │   └── loose-envify@1.3.1 
+│ │ │ ├─┬ babel-types@6.26.0 
+│ │ │ │ └── to-fast-properties@1.0.3 
+│ │ │ └── babylon@6.18.0 
+│ │ └── loader-utils@0.2.17 
+│ ├── karma-source-map-support@1.2.0 
+│ ├─┬ less@2.7.3 
+│ │ ├─┬ errno@0.1.7 
+│ │ │ └── prr@1.0.1 
+│ │ ├── image-size@0.5.5 
+│ │ ├─┬ promise@7.3.1 
+│ │ │ └── asap@2.0.6 
+│ │ └─┬ request@2.81.0 
+│ │   ├── aws-sign2@0.6.0 
+│ │   ├── aws4@1.6.0 
+│ │   ├── caseless@0.12.0 
+│ │   ├─┬ combined-stream@1.0.6 
+│ │   │ └── delayed-stream@1.0.0 
+│ │   ├── forever-agent@0.6.1 
+│ │   ├─┬ form-data@2.1.4 
+│ │   │ └── asynckit@0.4.0 
+│ │   ├─┬ har-validator@4.2.1 
+│ │   │ ├─┬ ajv@4.11.8 
+│ │   │ │ └─┬ json-stable-stringify@1.0.1 
+│ │   │ │   └── jsonify@0.0.0 
+│ │   │ └── har-schema@1.0.5 
+│ │   ├─┬ hawk@3.1.3 
+│ │   │ ├── boom@2.10.1 
+│ │   │ ├── cryptiles@2.0.5 
+│ │   │ ├── hoek@2.16.3 
+│ │   │ └── sntp@1.0.9 
+│ │   ├─┬ http-signature@1.1.1 
+│ │   │ ├── assert-plus@0.2.0 
+│ │   │ ├─┬ jsprim@1.4.1 
+│ │   │ │ ├── assert-plus@1.0.0 
+│ │   │ │ ├── extsprintf@1.3.0 
+│ │   │ │ ├── json-schema@0.2.3 
+│ │   │ │ └─┬ verror@1.10.0 
+│ │   │ │   └── assert-plus@1.0.0 
+│ │   │ └─┬ sshpk@1.13.1 
+│ │   │   ├── asn1@0.2.3 
+│ │   │   ├── assert-plus@1.0.0 
+│ │   │   ├── bcrypt-pbkdf@1.0.1 
+│ │   │   ├─┬ dashdash@1.14.1 
+│ │   │   │ └── assert-plus@1.0.0 
+│ │   │   ├── ecc-jsbn@0.1.1 
+│ │   │   ├─┬ getpass@0.1.7 
+│ │   │   │ └── assert-plus@1.0.0 
+│ │   │   ├── jsbn@0.1.1 
+│ │   │   └── tweetnacl@0.14.5 
+│ │   ├── is-typedarray@1.0.0 
+│ │   ├── isstream@0.1.2 
+│ │   ├── json-stringify-safe@5.0.1 
+│ │   ├─┬ mime-types@2.1.18 
+│ │   │ └── mime-db@1.33.0 
+│ │   ├── oauth-sign@0.8.2 
+│ │   ├── performance-now@0.2.0 
+│ │   ├── qs@6.4.0 
+│ │   ├── stringstream@0.0.5 
+│ │   ├── tough-cookie@2.3.4 
+│ │   ├── tunnel-agent@0.6.0 
+│ │   └── uuid@3.2.1 
+│ ├─┬ less-loader@4.0.6 
+│ │ ├── clone@2.1.1 
+│ │ └── pify@3.0.0 
+│ ├─┬ license-webpack-plugin@1.1.2 
+│ │ └── ejs@2.5.7 
+│ ├─┬ loader-utils@1.1.0 
+│ │ ├── big.js@3.2.0 
+│ │ ├── emojis-list@2.1.0 
+│ │ └── json5@0.5.1 
+│ ├── lodash@4.17.5 
+│ ├─┬ memory-fs@0.4.1 
+│ │ └─┬ readable-stream@2.3.4 
+│ │   ├── core-util-is@1.0.2 
+│ │   ├── isarray@1.0.0 
+│ │   ├── process-nextick-args@2.0.0 
+│ │   ├── string_decoder@1.0.3 
+│ │   └── util-deprecate@1.0.2 
+│ ├─┬ minimatch@3.0.4 
+│ │ └─┬ brace-expansion@1.1.11 
+│ │   └── concat-map@0.0.1 
+│ ├── node-modules-path@1.0.1 
+│ ├─┬ node-sass@4.7.2 
+│ │ ├── async-foreach@0.1.3 
+│ │ ├─┬ chalk@1.1.3 
+│ │ │ ├── ansi-styles@2.2.1 
+│ │ │ └── supports-color@2.0.0 
+│ │ ├── cross-spawn@3.0.1 
+│ │ ├─┬ gaze@1.1.2 
+│ │ │ └── globule@1.2.0 
+│ │ ├── get-stdin@4.0.1 
+│ │ ├── in-publish@2.0.0 
+│ │ ├── lodash.assign@4.2.0 
+│ │ ├── lodash.clonedeep@4.5.0 
+│ │ ├── lodash.mergewith@4.6.1 
+│ │ ├─┬ meow@3.7.0 
+│ │ │ ├─┬ camelcase-keys@2.1.0 
+│ │ │ │ └── camelcase@2.1.1 
+│ │ │ ├─┬ loud-rejection@1.6.0 
+│ │ │ │ ├─┬ currently-unhandled@0.4.1 
+│ │ │ │ │ └── array-find-index@1.0.2 
+│ │ │ │ └── signal-exit@3.0.2 
+│ │ │ ├── map-obj@1.0.1 
+│ │ │ ├── minimist@1.2.0 
+│ │ │ ├─┬ normalize-package-data@2.4.0 
+│ │ │ │ ├── hosted-git-info@2.5.0 
+│ │ │ │ ├─┬ is-builtin-module@1.0.0 
+│ │ │ │ │ └── builtin-modules@1.1.1 
+│ │ │ │ └─┬ validate-npm-package-license@3.0.3 
+│ │ │ │   ├─┬ spdx-correct@3.0.0 
+│ │ │ │   │ └── spdx-license-ids@3.0.0 
+│ │ │ │   └─┬ spdx-expression-parse@3.0.0 
+│ │ │ │     └── spdx-exceptions@2.1.0 
+│ │ │ ├─┬ read-pkg-up@1.0.1 
+│ │ │ │ ├─┬ find-up@1.1.2 
+│ │ │ │ │ └── path-exists@2.1.0 
+│ │ │ │ └─┬ read-pkg@1.1.0 
+│ │ │ │   ├─┬ load-json-file@1.1.0 
+│ │ │ │   │ └── pify@2.3.0 
+│ │ │ │   └─┬ path-type@1.1.0 
+│ │ │ │     └── pify@2.3.0 
+│ │ │ ├─┬ redent@1.0.0 
+│ │ │ │ ├── indent-string@2.1.0 
+│ │ │ │ └── strip-indent@1.0.1 
+│ │ │ └── trim-newlines@1.0.0 
+│ │ ├── nan@2.9.2 
+│ │ ├─┬ node-gyp@3.6.2 
+│ │ │ ├── fstream@1.0.11 
+│ │ │ ├── nopt@3.0.6 
+│ │ │ ├── semver@5.3.0 
+│ │ │ └─┬ tar@2.2.1 
+│ │ │   └── block-stream@0.0.9 
+│ │ ├─┬ npmlog@4.1.2 
+│ │ │ ├─┬ are-we-there-yet@1.1.4 
+│ │ │ │ └── delegates@1.0.0 
+│ │ │ ├── console-control-strings@1.1.0 
+│ │ │ ├─┬ gauge@2.7.4 
+│ │ │ │ ├── has-unicode@2.0.1 
+│ │ │ │ └── wide-align@1.1.2 
+│ │ │ └── set-blocking@2.0.0 
+│ │ ├─┬ request@2.79.0 
+│ │ │ ├── caseless@0.11.0 
+│ │ │ ├─┬ har-validator@2.0.6 
+│ │ │ │ └─┬ is-my-json-valid@2.17.2 
+│ │ │ │   ├── generate-function@2.0.0 
+│ │ │ │   ├─┬ generate-object-property@1.2.0 
+│ │ │ │   │ └── is-property@1.0.2 
+│ │ │ │   ├── is-my-ip-valid@1.0.0 
+│ │ │ │   └── jsonpointer@4.0.1 
+│ │ │ ├── qs@6.3.2 
+│ │ │ └── tunnel-agent@0.4.3 
+│ │ ├─┬ sass-graph@2.2.4 
+│ │ │ ├─┬ scss-tokenizer@0.2.3 
+│ │ │ │ └── source-map@0.4.4 
+│ │ │ └─┬ yargs@7.1.0 
+│ │ │   ├── camelcase@3.0.0 
+│ │ │   ├── y18n@3.2.1 
+│ │ │   └─┬ yargs-parser@5.0.0 
+│ │ │     └── camelcase@3.0.0 
+│ │ ├── stdout-stream@1.4.0 
+│ │ └─┬ true-case-path@1.0.2 
+│ │   └── glob@6.0.4 
+│ ├─┬ nopt@4.0.1 
+│ │ ├── abbrev@1.1.1 
+│ │ └─┬ osenv@0.1.5 
+│ │   └── os-homedir@1.0.2 
+│ ├─┬ opn@5.1.0 
+│ │ └── is-wsl@1.1.0 
+│ ├─┬ portfinder@1.0.13 
+│ │ ├── async@1.5.2 
+│ │ └─┬ debug@2.6.9 
+│ │   └── ms@2.0.0 
+│ ├─┬ postcss-custom-properties@6.3.1 
+│ │ ├── balanced-match@1.0.0 
+│ │ └─┬ postcss@6.0.19 
+│ │   ├── chalk@2.3.2 
+│ │   ├── source-map@0.6.1 
+│ │   └─┬ supports-color@5.3.0 
+│ │     └── has-flag@3.0.0 
+│ ├─┬ postcss-loader@2.1.1 
+│ │ ├─┬ postcss@6.0.19 
+│ │ │ ├── chalk@2.3.2 
+│ │ │ ├── source-map@0.6.1 
+│ │ │ └─┬ supports-color@5.3.0 
+│ │ │   └── has-flag@3.0.0 
+│ │ ├─┬ postcss-load-config@1.2.0 
+│ │ │ ├─┬ cosmiconfig@2.2.2 
+│ │ │ │ ├── is-directory@0.3.1 
+│ │ │ │ ├── minimist@1.2.0 
+│ │ │ │ ├─┬ parse-json@2.2.0 
+│ │ │ │ │ └─┬ error-ex@1.3.1 
+│ │ │ │ │   └── is-arrayish@0.2.1 
+│ │ │ │ └── require-from-string@1.2.1 
+│ │ │ ├── postcss-load-options@1.2.0 
+│ │ │ └── postcss-load-plugins@2.3.0 
+│ │ └─┬ schema-utils@0.4.5 
+│ │   └── UNMET PEER DEPENDENCY ajv@6.2.0
+│ ├─┬ postcss-url@7.3.1 
+│ │ ├─┬ postcss@6.0.19 
+│ │ │ ├── chalk@2.3.2 
+│ │ │ ├── source-map@0.6.1 
+│ │ │ └─┬ supports-color@5.3.0 
+│ │ │   └── has-flag@3.0.0 
+│ │ └─┬ xxhashjs@0.2.2 
+│ │   └── cuint@0.2.2 
+│ ├── raw-loader@0.5.1 
+│ ├─┬ resolve@1.5.0 
+│ │ └── path-parse@1.0.5 
+│ ├─┬ sass-loader@6.0.6 
+│ │ ├─┬ clone-deep@0.3.0 
+│ │ │ ├─┬ for-own@1.0.0 
+│ │ │ │ └── for-in@1.0.2 
+│ │ │ ├─┬ is-plain-object@2.0.4 
+│ │ │ │ └── isobject@3.0.1 
+│ │ │ ├─┬ kind-of@3.2.2 
+│ │ │ │ └── is-buffer@1.1.6 
+│ │ │ └─┬ shallow-clone@0.1.2 
+│ │ │   ├── is-extendable@0.1.1 
+│ │ │   ├── kind-of@2.0.1 
+│ │ │   ├── lazy-cache@0.2.7 
+│ │ │   └─┬ mixin-object@2.0.1 
+│ │ │     └── for-in@0.1.8 
+│ │ └── lodash.tail@4.1.1 
+│ ├── semver@5.5.0 
+│ ├── silent-error@1.1.0 
+│ ├─┬ source-map-loader@0.2.3 
+│ │ ├── loader-utils@0.2.17 
+│ │ └── source-map@0.6.1 
+│ ├── source-map-support@0.4.18 
+│ ├── style-loader@0.13.2 
+│ ├─┬ stylus@0.54.5 
+│ │ ├── css-parse@1.7.0 
+│ │ ├── glob@7.0.6 
+│ │ ├── sax@0.5.8 
+│ │ └─┬ source-map@0.1.43 
+│ │   └── amdefine@1.0.1 
+│ ├─┬ stylus-loader@3.0.2 
+│ │ └── when@3.6.4 
+│ ├─┬ uglifyjs-webpack-plugin@1.2.2 
+│ │ ├─┬ schema-utils@0.4.5 
+│ │ │ └── UNMET PEER DEPENDENCY ajv@6.2.0
+│ │ ├── source-map@0.6.1 
+│ │ ├─┬ uglify-es@3.3.9 
+│ │ │ └── commander@2.13.0 
+│ │ └─┬ worker-farm@1.5.4 
+│ │   └── xtend@4.0.1 
+│ ├── url-loader@0.6.2 
+│ ├─┬ webpack@3.10.0 
+│ │ ├── acorn@5.5.0 
+│ │ ├─┬ acorn-dynamic-import@2.0.2 
+│ │ │ └── acorn@4.0.13 
+│ │ ├── ajv-keywords@2.1.1 
+│ │ ├─┬ escope@3.6.0 
+│ │ │ ├─┬ es6-map@0.1.5 
+│ │ │ │ ├── d@1.0.0 
+│ │ │ │ ├── es5-ext@0.10.39 
+│ │ │ │ ├── es6-iterator@2.0.3 
+│ │ │ │ ├── es6-set@0.1.5 
+│ │ │ │ ├── es6-symbol@3.1.1 
+│ │ │ │ └── event-emitter@0.3.5 
+│ │ │ ├── es6-weak-map@2.0.2 
+│ │ │ ├── esrecurse@4.2.1 
+│ │ │ └── estraverse@4.2.0 
+│ │ ├── interpret@1.1.0 
+│ │ ├── json-loader@0.5.7 
+│ │ ├── loader-runner@2.3.0 
+│ │ ├─┬ node-libs-browser@2.1.0 
+│ │ │ ├── assert@1.4.1 
+│ │ │ ├─┬ browserify-zlib@0.2.0 
+│ │ │ │ └── pako@1.0.6 
+│ │ │ ├─┬ buffer@4.9.1 
+│ │ │ │ ├── base64-js@1.2.3 
+│ │ │ │ └── ieee754@1.1.8 
+│ │ │ ├─┬ console-browserify@1.1.0 
+│ │ │ │ └── date-now@0.1.4 
+│ │ │ ├── constants-browserify@1.0.0 
+│ │ │ ├─┬ crypto-browserify@3.12.0 
+│ │ │ │ ├─┬ browserify-cipher@1.0.0 
+│ │ │ │ │ ├─┬ browserify-aes@1.1.1 
+│ │ │ │ │ │ └── buffer-xor@1.0.3 
+│ │ │ │ │ ├─┬ browserify-des@1.0.0 
+│ │ │ │ │ │ └── des.js@1.0.0 
+│ │ │ │ │ └─┬ evp_bytestokey@1.0.3 
+│ │ │ │ │   └─┬ md5.js@1.3.4 
+│ │ │ │ │     └── hash-base@3.0.4 
+│ │ │ │ ├─┬ browserify-sign@4.0.4 
+│ │ │ │ │ ├── bn.js@4.11.8 
+│ │ │ │ │ ├── browserify-rsa@4.0.1 
+│ │ │ │ │ ├─┬ elliptic@6.4.0 
+│ │ │ │ │ │ ├── brorand@1.1.0 
+│ │ │ │ │ │ ├── hash.js@1.1.3 
+│ │ │ │ │ │ ├── hmac-drbg@1.0.1 
+│ │ │ │ │ │ └── minimalistic-crypto-utils@1.0.1 
+│ │ │ │ │ └─┬ parse-asn1@5.1.0 
+│ │ │ │ │   └── asn1.js@4.10.1 
+│ │ │ │ ├── create-ecdh@4.0.0 
+│ │ │ │ ├─┬ create-hash@1.1.3 
+│ │ │ │ │ ├── cipher-base@1.0.4 
+│ │ │ │ │ ├─┬ ripemd160@2.0.1 
+│ │ │ │ │ │ └── hash-base@2.0.2 
+│ │ │ │ │ └── sha.js@2.4.10 
+│ │ │ │ ├── create-hmac@1.1.6 
+│ │ │ │ ├─┬ diffie-hellman@5.0.2 
+│ │ │ │ │ └── miller-rabin@4.0.1 
+│ │ │ │ ├── pbkdf2@3.0.14 
+│ │ │ │ ├── public-encrypt@4.0.0 
+│ │ │ │ ├── randombytes@2.0.6 
+│ │ │ │ └── randomfill@1.0.4 
+│ │ │ ├── domain-browser@1.2.0 
+│ │ │ ├── events@1.1.1 
+│ │ │ ├── https-browserify@1.0.0 
+│ │ │ ├── os-browserify@0.3.0 
+│ │ │ ├── path-browserify@0.0.0 
+│ │ │ ├── process@0.11.10 
+│ │ │ ├── punycode@1.4.1 
+│ │ │ ├── querystring-es3@0.2.1 
+│ │ │ ├── stream-browserify@2.0.1 
+│ │ │ ├─┬ stream-http@2.8.0 
+│ │ │ │ ├── builtin-status-codes@3.0.0 
+│ │ │ │ └── to-arraybuffer@1.0.1 
+│ │ │ ├─┬ timers-browserify@2.0.6 
+│ │ │ │ └── setimmediate@1.0.5 
+│ │ │ ├── tty-browserify@0.0.0 
+│ │ │ ├─┬ url@0.11.0 
+│ │ │ │ ├── punycode@1.3.2 
+│ │ │ │ └── querystring@0.2.0 
+│ │ │ ├─┬ util@0.10.3 
+│ │ │ │ └── inherits@2.0.1 
+│ │ │ └── vm-browserify@0.0.4 
+│ │ ├── tapable@0.2.8 
+│ │ ├─┬ uglifyjs-webpack-plugin@0.4.6 
+│ │ │ └─┬ uglify-js@2.8.29 
+│ │ │   ├── uglify-to-browserify@1.0.2 
+│ │ │   └─┬ yargs@3.10.0 
+│ │ │     ├── camelcase@1.2.1 
+│ │ │     ├─┬ cliui@2.1.0 
+│ │ │     │ ├─┬ center-align@0.1.3 
+│ │ │     │ │ ├─┬ align-text@0.1.4 
+│ │ │     │ │ │ └── longest@1.0.1 
+│ │ │     │ │ └── lazy-cache@1.0.4 
+│ │ │     │ └── right-align@0.1.3 
+│ │ │     └── window-size@0.1.0 
+│ │ ├─┬ watchpack@1.5.0 
+│ │ │ ├─┬ chokidar@2.0.2 
+│ │ │ │ ├─┬ anymatch@2.0.0 
+│ │ │ │ │ └─┬ micromatch@3.1.9 
+│ │ │ │ │   ├── arr-diff@4.0.0 
+│ │ │ │ │   ├─┬ define-property@2.0.2 
+│ │ │ │ │   │ └── isobject@3.0.1 
+│ │ │ │ │   ├─┬ extend-shallow@3.0.2 
+│ │ │ │ │   │ ├── assign-symbols@1.0.0 
+│ │ │ │ │   │ └── is-extendable@1.0.1 
+│ │ │ │ │   ├─┬ extglob@2.0.4 
+│ │ │ │ │   │ ├── define-property@1.0.0 
+│ │ │ │ │   │ ├─┬ expand-brackets@2.1.4 
+│ │ │ │ │   │ │ ├─┬ define-property@0.2.5 
+│ │ │ │ │   │ │ │ └─┬ is-descriptor@0.1.6 
+│ │ │ │ │   │ │ │   ├─┬ is-accessor-descriptor@0.1.6 
+│ │ │ │ │   │ │ │   │ └── kind-of@3.2.2 
+│ │ │ │ │   │ │ │   ├─┬ is-data-descriptor@0.1.4 
+│ │ │ │ │   │ │ │   │ └── kind-of@3.2.2 
+│ │ │ │ │   │ │ │   └── kind-of@5.1.0 
+│ │ │ │ │   │ │ ├── extend-shallow@2.0.1 
+│ │ │ │ │   │ │ └── posix-character-classes@0.1.1 
+│ │ │ │ │   │ └── extend-shallow@2.0.1 
+│ │ │ │ │   ├── fragment-cache@0.2.1 
+│ │ │ │ │   ├─┬ nanomatch@1.2.9 
+│ │ │ │ │   │ ├── arr-diff@4.0.0 
+│ │ │ │ │   │ ├── array-unique@0.3.2 
+│ │ │ │ │   │ ├─┬ is-odd@2.0.0 
+│ │ │ │ │   │ │ └── is-number@4.0.0 
+│ │ │ │ │   │ ├── is-windows@1.0.2 
+│ │ │ │ │   │ └── kind-of@6.0.2 
+│ │ │ │ │   ├─┬ object.pick@1.3.0 
+│ │ │ │ │   │ └── isobject@3.0.1 
+│ │ │ │ │   └── regex-not@1.0.2 
+│ │ │ │ ├─┬ braces@2.3.1 
+│ │ │ │ │ ├── array-unique@0.3.2 
+│ │ │ │ │ ├─┬ define-property@1.0.0 
+│ │ │ │ │ │ └─┬ is-descriptor@1.0.2 
+│ │ │ │ │ │   ├─┬ is-accessor-descriptor@1.0.0 
+│ │ │ │ │ │   │ └── kind-of@6.0.2 
+│ │ │ │ │ │   ├─┬ is-data-descriptor@1.0.0 
+│ │ │ │ │ │   │ └── kind-of@6.0.2 
+│ │ │ │ │ │   └── kind-of@6.0.2 
+│ │ │ │ │ ├── extend-shallow@2.0.1 
+│ │ │ │ │ ├─┬ fill-range@4.0.0 
+│ │ │ │ │ │ ├── extend-shallow@2.0.1 
+│ │ │ │ │ │ ├─┬ is-number@3.0.0 
+│ │ │ │ │ │ │ └── kind-of@3.2.2 
+│ │ │ │ │ │ ├── repeat-string@1.6.1 
+│ │ │ │ │ │ └─┬ to-regex-range@2.1.1 
+│ │ │ │ │ │   └── is-number@3.0.0 
+│ │ │ │ │ ├── isobject@3.0.1 
+│ │ │ │ │ ├── kind-of@6.0.2 
+│ │ │ │ │ ├─┬ snapdragon@0.8.1 
+│ │ │ │ │ │ ├─┬ base@0.11.2 
+│ │ │ │ │ │ │ ├─┬ cache-base@1.0.1 
+│ │ │ │ │ │ │ │ ├─┬ collection-visit@1.0.0 
+│ │ │ │ │ │ │ │ │ ├── map-visit@1.0.0 
+│ │ │ │ │ │ │ │ │ └─┬ object-visit@1.0.1 
+│ │ │ │ │ │ │ │ │   └── isobject@3.0.1 
+│ │ │ │ │ │ │ │ ├── get-value@2.0.6 
+│ │ │ │ │ │ │ │ ├─┬ has-value@1.0.0 
+│ │ │ │ │ │ │ │ │ ├─┬ has-values@1.0.0 
+│ │ │ │ │ │ │ │ │ │ ├─┬ is-number@3.0.0 
+│ │ │ │ │ │ │ │ │ │ │ └── kind-of@3.2.2 
+│ │ │ │ │ │ │ │ │ │ └── kind-of@4.0.0 
+│ │ │ │ │ │ │ │ │ └── isobject@3.0.1 
+│ │ │ │ │ │ │ │ ├── isobject@3.0.1 
+│ │ │ │ │ │ │ │ ├─┬ set-value@2.0.0 
+│ │ │ │ │ │ │ │ │ └── extend-shallow@2.0.1 
+│ │ │ │ │ │ │ │ ├── to-object-path@0.3.0 
+│ │ │ │ │ │ │ │ ├─┬ union-value@1.0.0 
+│ │ │ │ │ │ │ │ │ └─┬ set-value@0.4.3 
+│ │ │ │ │ │ │ │ │   └── extend-shallow@2.0.1 
+│ │ │ │ │ │ │ │ └─┬ unset-value@1.0.0 
+│ │ │ │ │ │ │ │   ├─┬ has-value@0.3.1 
+│ │ │ │ │ │ │ │   │ ├── has-values@0.1.4 
+│ │ │ │ │ │ │ │   │ └── isobject@2.1.0 
+│ │ │ │ │ │ │ │   └── isobject@3.0.1 
+│ │ │ │ │ │ │ ├─┬ class-utils@0.3.6 
+│ │ │ │ │ │ │ │ ├── arr-union@3.1.0 
+│ │ │ │ │ │ │ │ ├─┬ define-property@0.2.5 
+│ │ │ │ │ │ │ │ │ └─┬ is-descriptor@0.1.6 
+│ │ │ │ │ │ │ │ │   ├─┬ is-accessor-descriptor@0.1.6 
+│ │ │ │ │ │ │ │ │   │ └── kind-of@3.2.2 
+│ │ │ │ │ │ │ │ │   ├─┬ is-data-descriptor@0.1.4 
+│ │ │ │ │ │ │ │ │   │ └── kind-of@3.2.2 
+│ │ │ │ │ │ │ │ │   └── kind-of@5.1.0 
+│ │ │ │ │ │ │ │ ├── isobject@3.0.1 
+│ │ │ │ │ │ │ │ └─┬ static-extend@0.1.2 
+│ │ │ │ │ │ │ │   ├─┬ define-property@0.2.5 
+│ │ │ │ │ │ │ │   │ └─┬ is-descriptor@0.1.6 
+│ │ │ │ │ │ │ │   │   ├─┬ is-accessor-descriptor@0.1.6 
+│ │ │ │ │ │ │ │   │   │ └── kind-of@3.2.2 
+│ │ │ │ │ │ │ │   │   ├─┬ is-data-descriptor@0.1.4 
+│ │ │ │ │ │ │ │   │   │ └── kind-of@3.2.2 
+│ │ │ │ │ │ │ │   │   └── kind-of@5.1.0 
+│ │ │ │ │ │ │ │   └─┬ object-copy@0.1.0 
+│ │ │ │ │ │ │ │     ├── copy-descriptor@0.1.1 
+│ │ │ │ │ │ │ │     └─┬ define-property@0.2.5 
+│ │ │ │ │ │ │ │       └─┬ is-descriptor@0.1.6 
+│ │ │ │ │ │ │ │         ├── is-accessor-descriptor@0.1.6 
+│ │ │ │ │ │ │ │         ├── is-data-descriptor@0.1.4 
+│ │ │ │ │ │ │ │         └── kind-of@5.1.0 
+│ │ │ │ │ │ │ ├── define-property@1.0.0 
+│ │ │ │ │ │ │ ├── isobject@3.0.1 
+│ │ │ │ │ │ │ ├─┬ mixin-deep@1.3.1 
+│ │ │ │ │ │ │ │ └── is-extendable@1.0.1 
+│ │ │ │ │ │ │ └── pascalcase@0.1.1 
+│ │ │ │ │ │ ├─┬ define-property@0.2.5 
+│ │ │ │ │ │ │ └─┬ is-descriptor@0.1.6 
+│ │ │ │ │ │ │   ├─┬ is-accessor-descriptor@0.1.6 
+│ │ │ │ │ │ │   │ └── kind-of@3.2.2 
+│ │ │ │ │ │ │   ├─┬ is-data-descriptor@0.1.4 
+│ │ │ │ │ │ │   │ └── kind-of@3.2.2 
+│ │ │ │ │ │ │   └── kind-of@5.1.0 
+│ │ │ │ │ │ ├── extend-shallow@2.0.1 
+│ │ │ │ │ │ ├── map-cache@0.2.2 
+│ │ │ │ │ │ ├─┬ source-map-resolve@0.5.1 
+│ │ │ │ │ │ │ ├── atob@2.0.3 
+│ │ │ │ │ │ │ ├── decode-uri-component@0.2.0 
+│ │ │ │ │ │ │ ├── resolve-url@0.2.1 
+│ │ │ │ │ │ │ ├── source-map-url@0.4.0 
+│ │ │ │ │ │ │ └── urix@0.1.0 
+│ │ │ │ │ │ └─┬ use@2.0.2 
+│ │ │ │ │ │   ├─┬ define-property@0.2.5 
+│ │ │ │ │ │   │ └─┬ is-descriptor@0.1.6 
+│ │ │ │ │ │   │   ├─┬ is-accessor-descriptor@0.1.6 
+│ │ │ │ │ │   │   │ └── kind-of@3.2.2 
+│ │ │ │ │ │   │   ├─┬ is-data-descriptor@0.1.4 
+│ │ │ │ │ │   │   │ └── kind-of@3.2.2 
+│ │ │ │ │ │   │   └── kind-of@5.1.0 
+│ │ │ │ │ │   ├── isobject@3.0.1 
+│ │ │ │ │ │   └─┬ lazy-cache@2.0.2 
+│ │ │ │ │ │     └── set-getter@0.1.0 
+│ │ │ │ │ ├─┬ snapdragon-node@2.1.1 
+│ │ │ │ │ │ ├── define-property@1.0.0 
+│ │ │ │ │ │ ├── isobject@3.0.1 
+│ │ │ │ │ │ └── snapdragon-util@3.0.1 
+│ │ │ │ │ ├── split-string@3.1.0 
+│ │ │ │ │ └─┬ to-regex@3.0.2 
+│ │ │ │ │   └─┬ safe-regex@1.1.0 
+│ │ │ │ │     └── ret@0.1.15 
+│ │ │ │ ├─┬ glob-parent@3.1.0 
+│ │ │ │ │ ├── is-glob@3.1.0 
+│ │ │ │ │ └── path-dirname@1.0.2 
+│ │ │ │ ├─┬ is-glob@4.0.0 
+│ │ │ │ │ └── is-extglob@2.1.1 
+│ │ │ │ └── upath@1.0.4 
+│ │ │ └── neo-async@2.5.0 
+│ │ └─┬ yargs@8.0.2 
+│ │   ├── camelcase@4.1.0 
+│ │   ├─┬ cliui@3.2.0 
+│ │   │ ├── string-width@1.0.2 
+│ │   │ └── wrap-ansi@2.1.0 
+│ │   ├── get-caller-file@1.0.2 
+│ │   ├─┬ os-locale@2.1.0 
+│ │   │ ├─┬ execa@0.7.0 
+│ │   │ │ ├─┬ cross-spawn@5.1.0 
+│ │   │ │ │ └─┬ shebang-command@1.2.0 
+│ │   │ │ │   └── shebang-regex@1.0.0 
+│ │   │ │ ├── get-stream@3.0.0 
+│ │   │ │ ├── is-stream@1.1.0 
+│ │   │ │ ├─┬ npm-run-path@2.0.2 
+│ │   │ │ │ └── path-key@2.0.1 
+│ │   │ │ ├── p-finally@1.0.0 
+│ │   │ │ └── strip-eof@1.0.0 
+│ │   │ ├─┬ lcid@1.0.0 
+│ │   │ │ └── invert-kv@1.0.0 
+│ │   │ └─┬ mem@1.1.0 
+│ │   │   └── mimic-fn@1.2.0 
+│ │   ├─┬ read-pkg-up@2.0.0 
+│ │   │ └─┬ read-pkg@2.0.0 
+│ │   │   ├─┬ load-json-file@2.0.0 
+│ │   │   │ ├── pify@2.3.0 
+│ │   │   │ └── strip-bom@3.0.0 
+│ │   │   └── path-type@2.0.0 
+│ │   ├── require-directory@2.1.1 
+│ │   ├── require-main-filename@1.0.1 
+│ │   ├─┬ string-width@2.1.1 
+│ │   │ ├── is-fullwidth-code-point@2.0.0 
+│ │   │ └─┬ strip-ansi@4.0.0 
+│ │   │   └── ansi-regex@3.0.0 
+│ │   ├── which-module@2.0.0 
+│ │   ├── y18n@3.2.1 
+│ │   └─┬ yargs-parser@7.0.0 
+│ │     └── camelcase@4.1.0 
+│ ├─┬ webpack-dev-middleware@1.12.2 
+│ │ └── time-stamp@2.0.0 
+│ ├─┬ webpack-dev-server@2.9.7 
+│ │ ├── ansi-html@0.0.7 
+│ │ ├─┬ array-includes@3.0.3 
+│ │ │ ├─┬ define-properties@1.1.2 
+│ │ │ │ ├── foreach@2.0.5 
+│ │ │ │ └── object-keys@1.0.11 
+│ │ │ └─┬ es-abstract@1.10.0 
+│ │ │   ├─┬ es-to-primitive@1.1.1 
+│ │ │   │ ├── is-date-object@1.0.1 
+│ │ │   │ └── is-symbol@1.0.1 
+│ │ │   ├── is-callable@1.1.3 
+│ │ │   └── is-regex@1.0.4 
+│ │ ├─┬ bonjour@3.5.0 
+│ │ │ ├── array-flatten@2.1.1 
+│ │ │ ├── deep-equal@1.0.1 
+│ │ │ ├── dns-equal@1.0.0 
+│ │ │ ├─┬ dns-txt@2.0.2 
+│ │ │ │ └── buffer-indexof@1.1.1 
+│ │ │ ├─┬ multicast-dns@6.2.3 
+│ │ │ │ ├── dns-packet@1.3.1 
+│ │ │ │ └── thunky@1.0.2 
+│ │ │ └── multicast-dns-service-types@1.1.0 
+│ │ ├─┬ compression@1.7.2 
+│ │ │ ├─┬ accepts@1.3.5 
+│ │ │ │ └── negotiator@0.6.1 
+│ │ │ ├── compressible@2.0.13 
+│ │ │ ├── on-headers@1.0.1 
+│ │ │ └── vary@1.1.2 
+│ │ ├── connect-history-api-fallback@1.5.0 
+│ │ ├── debug@3.1.0 
+│ │ ├─┬ del@3.0.0 
+│ │ │ ├─┬ globby@6.1.0 
+│ │ │ │ └── pify@2.3.0 
+│ │ │ ├── is-path-cwd@1.0.0 
+│ │ │ ├─┬ is-path-in-cwd@1.0.0 
+│ │ │ │ └─┬ is-path-inside@1.0.1 
+│ │ │ │   └── path-is-inside@1.0.2 
+│ │ │ └── p-map@1.2.0 
+│ │ ├─┬ express@4.16.2 
+│ │ │ ├── array-flatten@1.1.1 
+│ │ │ ├── content-disposition@0.5.2 
+│ │ │ ├── cookie@0.3.1 
+│ │ │ ├── cookie-signature@1.0.6 
+│ │ │ ├── encodeurl@1.0.2 
+│ │ │ ├── escape-html@1.0.3 
+│ │ │ ├── etag@1.8.1 
+│ │ │ ├── fresh@0.5.2 
+│ │ │ ├── merge-descriptors@1.0.1 
+│ │ │ ├── methods@1.1.2 
+│ │ │ ├── path-to-regexp@0.1.7 
+│ │ │ ├─┬ proxy-addr@2.0.3 
+│ │ │ │ ├── forwarded@0.1.2 
+│ │ │ │ └── ipaddr.js@1.6.0 
+│ │ │ ├── qs@6.5.1 
+│ │ │ ├─┬ send@0.16.1 
+│ │ │ │ ├── destroy@1.0.4 
+│ │ │ │ └── mime@1.4.1 
+│ │ │ ├── serve-static@1.13.1 
+│ │ │ ├── setprototypeof@1.1.0 
+│ │ │ └── statuses@1.3.1 
+│ │ ├── html-entities@1.2.1 
+│ │ ├─┬ http-proxy-middleware@0.17.4 
+│ │ │ └─┬ is-glob@3.1.0 
+│ │ │   └── is-extglob@2.1.1 
+│ │ ├─┬ import-local@0.1.1 
+│ │ │ └─┬ resolve-cwd@2.0.0 
+│ │ │   └── resolve-from@3.0.0 
+│ │ ├── internal-ip@1.2.0 
+│ │ ├── ip@1.1.5 
+│ │ ├── killable@1.0.0 
+│ │ ├── loglevel@1.6.1 
+│ │ ├─┬ selfsigned@1.10.2 
+│ │ │ └── node-forge@0.7.1 
+│ │ ├─┬ serve-index@1.9.1 
+│ │ │ └── batch@0.6.1 
+│ │ ├─┬ sockjs@0.3.18 
+│ │ │ ├─┬ faye-websocket@0.10.0 
+│ │ │ │ └─┬ websocket-driver@0.7.0 
+│ │ │ │   ├── http-parser-js@0.4.10 
+│ │ │ │   └── websocket-extensions@0.1.3 
+│ │ │ └── uuid@2.0.3 
+│ │ ├─┬ sockjs-client@1.1.4 
+│ │ │ ├─┬ eventsource@0.1.6 
+│ │ │ │ └─┬ original@1.0.0 
+│ │ │ │   └─┬ url-parse@1.0.5 
+│ │ │ │     └── querystringify@0.0.4 
+│ │ │ ├── faye-websocket@0.11.1 
+│ │ │ ├── json3@3.3.2 
+│ │ │ └─┬ url-parse@1.2.0 
+│ │ │   └── querystringify@1.0.0 
+│ │ ├─┬ spdy@3.4.7 
+│ │ │ ├── handle-thing@1.2.5 
+│ │ │ ├── http-deceiver@1.2.7 
+│ │ │ ├── select-hose@2.0.0 
+│ │ │ └─┬ spdy-transport@2.0.20 
+│ │ │   ├── detect-node@2.0.3 
+│ │ │   ├── hpack.js@2.1.6 
+│ │ │   ├── obuf@1.1.1 
+│ │ │   └─┬ wbuf@1.7.2 
+│ │ │     └── minimalistic-assert@1.0.0 
+│ │ ├─┬ strip-ansi@3.0.1 
+│ │ │ └── ansi-regex@2.1.1 
+│ │ └─┬ yargs@6.6.0 
+│ │   ├── camelcase@3.0.0 
+│ │   ├── cliui@3.2.0 
+│ │   ├── os-locale@1.4.0 
+│ │   ├─┬ string-width@1.0.2 
+│ │   │ ├── code-point-at@1.1.0 
+│ │   │ └─┬ is-fullwidth-code-point@1.0.0 
+│ │   │   └── number-is-nan@1.0.1 
+│ │   ├── which-module@1.0.0 
+│ │   ├── y18n@3.2.1 
+│ │   └── yargs-parser@4.2.1 
+│ ├── webpack-merge@4.1.2 
+│ ├─┬ webpack-sources@1.1.0 
+│ │ └── source-map@0.6.1 
+│ └─┬ webpack-subresource-integrity@1.0.4 
+│   └─┬ webpack-core@0.6.9 
+│     ├── source-list-map@0.1.8 
+│     └── source-map@0.4.4 
+├── @angular/common@5.2.7 
+├── @angular/compiler@5.2.7 
+├─┬ @angular/compiler-cli@5.2.7 
+│ ├── minimist@1.2.0 
+│ ├── reflect-metadata@0.1.12 
+│ └─┬ tsickle@0.27.2 
+│   ├── minimist@1.2.0 
+│   ├── source-map@0.6.1 
+│   └── source-map-support@0.5.3 
+├── @angular/core@5.2.7 
+├── @angular/forms@5.2.7 
+├── @angular/http@5.2.7 
+├── @angular/language-service@5.2.7 
+├── @angular/material@5.2.3 
+├── @angular/platform-browser@5.2.7 
+├── @angular/platform-browser-dynamic@5.2.7 
+├── @angular/router@5.2.7 
+├── @types/jasmine@2.5.54 
+├── @types/jasminewd2@2.0.3 
+├── @types/node@6.0.101 
+├─┬ codelyzer@4.2.1 
+│ ├── app-root-path@2.0.1 
+│ ├─┬ css-selector-tokenizer@0.7.0 
+│ │ ├── cssesc@0.1.0 
+│ │ ├── fastparse@1.1.1 
+│ │ └─┬ regexpu-core@1.0.0 
+│ │   ├── regenerate@1.3.3 
+│ │   ├── regjsgen@0.2.0 
+│ │   └─┬ regjsparser@0.1.5 
+│ │     └── jsesc@0.5.0 
+│ ├─┬ cssauron@1.4.0 
+│ │ └── through@2.3.8 
+│ ├── semver-dsl@1.0.1 
+│ └── sprintf-js@1.0.3 
+├── core-js@2.5.3 
+├── hammerjs@2.0.8 
+├── jasmine-core@2.6.4 
+├─┬ jasmine-spec-reporter@4.1.1 
+│ └── colors@1.1.2 
+├─┬ karma@1.7.1 
+│ ├── bluebird@3.5.1 
+│ ├─┬ body-parser@1.18.2 
+│ │ ├── bytes@3.0.0 
+│ │ ├── content-type@1.0.4 
+│ │ ├── depd@1.1.2 
+│ │ ├─┬ http-errors@1.6.2 
+│ │ │ ├── depd@1.1.1 
+│ │ │ └── setprototypeof@1.0.3 
+│ │ ├── iconv-lite@0.4.19 
+│ │ ├─┬ on-finished@2.3.0 
+│ │ │ └── ee-first@1.1.1 
+│ │ ├── qs@6.5.1 
+│ │ ├─┬ raw-body@2.3.2 
+│ │ │ └── unpipe@1.0.0 
+│ │ └─┬ type-is@1.6.16 
+│ │   └── media-typer@0.3.0 
+│ ├── combine-lists@1.0.1 
+│ ├─┬ connect@3.6.6 
+│ │ ├── finalhandler@1.1.0 
+│ │ ├── parseurl@1.3.2 
+│ │ └── utils-merge@1.0.1 
+│ ├── di@0.0.1 
+│ ├─┬ dom-serialize@2.2.1 
+│ │ ├── custom-event@1.0.1 
+│ │ ├── ent@2.2.0 
+│ │ ├── extend@3.0.1 
+│ │ └── void-elements@2.0.1 
+│ ├─┬ expand-braces@0.1.2 
+│ │ ├── array-slice@0.2.3 
+│ │ ├── array-unique@0.2.1 
+│ │ └─┬ braces@0.1.5 
+│ │   └─┬ expand-range@0.1.1 
+│ │     ├── is-number@0.1.1 
+│ │     └── repeat-string@0.2.2 
+│ ├── graceful-fs@4.1.11 
+│ ├─┬ http-proxy@1.16.2 
+│ │ ├── eventemitter3@1.2.0 
+│ │ └── requires-port@1.0.0 
+│ ├── isbinaryfile@3.0.2 
+│ ├── lodash@3.10.1 
+│ ├─┬ log4js@0.6.38 
+│ │ ├─┬ readable-stream@1.0.34 
+│ │ │ ├── isarray@0.0.1 
+│ │ │ └── string_decoder@0.10.31 
+│ │ └── semver@4.3.6 
+│ ├── mime@1.6.0 
+│ ├─┬ optimist@0.6.1 
+│ │ ├── minimist@0.0.8 
+│ │ └── wordwrap@0.0.2 
+│ ├── qjobs@1.2.0 
+│ ├── range-parser@1.2.0 
+│ ├── rimraf@2.6.2 
+│ ├── safe-buffer@5.1.1 
+│ ├─┬ socket.io@1.7.3 
+│ │ ├─┬ debug@2.3.3 
+│ │ │ └── ms@0.7.2 
+│ │ ├─┬ engine.io@1.8.3 
+│ │ │ ├── accepts@1.3.3 
+│ │ │ ├── base64id@1.0.0 
+│ │ │ ├─┬ debug@2.3.3 
+│ │ │ │ └── ms@0.7.2 
+│ │ │ ├─┬ engine.io-parser@1.3.2 
+│ │ │ │ ├── after@0.8.2 
+│ │ │ │ ├── arraybuffer.slice@0.0.6 
+│ │ │ │ ├── base64-arraybuffer@0.1.5 
+│ │ │ │ ├── blob@0.0.4 
+│ │ │ │ └── wtf-8@1.0.0 
+│ │ │ └─┬ ws@1.1.2 
+│ │ │   ├── options@0.0.6 
+│ │ │   └── ultron@1.0.2 
+│ │ ├─┬ has-binary@0.1.7 
+│ │ │ └── isarray@0.0.1 
+│ │ ├── object-assign@4.1.0 
+│ │ ├─┬ socket.io-adapter@0.5.0 
+│ │ │ └─┬ debug@2.3.3 
+│ │ │   └── ms@0.7.2 
+│ │ ├─┬ socket.io-client@1.7.3 
+│ │ │ ├── backo2@1.0.2 
+│ │ │ ├── component-bind@1.0.0 
+│ │ │ ├── component-emitter@1.2.1 
+│ │ │ ├─┬ debug@2.3.3 
+│ │ │ │ └── ms@0.7.2 
+│ │ │ ├─┬ engine.io-client@1.8.3 
+│ │ │ │ ├── component-inherit@0.0.3 
+│ │ │ │ ├─┬ debug@2.3.3 
+│ │ │ │ │ └── ms@0.7.2 
+│ │ │ │ ├── has-cors@1.1.0 
+│ │ │ │ ├── parsejson@0.0.3 
+│ │ │ │ ├── parseqs@0.0.5 
+│ │ │ │ ├── xmlhttprequest-ssl@1.5.3 
+│ │ │ │ └── yeast@0.1.2 
+│ │ │ ├── indexof@0.0.1 
+│ │ │ ├── object-component@0.0.3 
+│ │ │ ├─┬ parseuri@0.0.5 
+│ │ │ │ └─┬ better-assert@1.0.2 
+│ │ │ │   └── callsite@1.0.0 
+│ │ │ └── to-array@0.1.4 
+│ │ └─┬ socket.io-parser@2.3.1 
+│ │   ├── component-emitter@1.1.2 
+│ │   ├─┬ debug@2.2.0 
+│ │   │ └── ms@0.7.1 
+│ │   └── isarray@0.0.1 
+│ ├─┬ tmp@0.0.31 
+│ │ └── os-tmpdir@1.0.2 
+│ └─┬ useragent@2.3.0 
+│   └─┬ lru-cache@4.1.1 
+│     ├── pseudomap@1.0.2 
+│     └── yallist@2.1.2 
+├─┬ karma-chrome-launcher@2.1.1 
+│ ├─┬ fs-access@1.0.1 
+│ │ └── null-check@1.0.0 
+│ └─┬ which@1.3.0 
+│   └── isexe@2.0.0 
+├── karma-cli@1.0.1 
+├─┬ karma-coverage-istanbul-reporter@1.4.1 
+│ └─┬ istanbul-api@1.2.2 
+│   ├── fileset@2.0.3 
+│   ├── istanbul-lib-coverage@1.1.2 
+│   ├─┬ istanbul-lib-hook@1.1.0 
+│   │ └─┬ append-transform@0.4.0 
+│   │   └─┬ default-require-extensions@1.0.0 
+│   │     └─┬ strip-bom@2.0.0 
+│   │       └── is-utf8@0.2.1 
+│   ├─┬ istanbul-lib-report@1.1.3 
+│   │ └─┬ supports-color@3.2.3 
+│   │   └── has-flag@1.0.0 
+│   ├─┬ istanbul-lib-source-maps@1.2.3 
+│   │ └── debug@3.1.0 
+│   ├─┬ istanbul-reports@1.1.4 
+│   │ └─┬ handlebars@4.0.11 
+│   │   ├── async@1.5.2 
+│   │   ├── source-map@0.4.4 
+│   │   └─┬ uglify-js@2.8.29 
+│   │     ├── source-map@0.5.7 
+│   │     └─┬ yargs@3.10.0 
+│   │       ├── camelcase@1.2.1 
+│   │       └── cliui@2.1.0 
+│   └─┬ js-yaml@3.7.0 
+│     ├── argparse@1.0.10 
+│     └── esprima@2.7.3 
+├── karma-jasmine@1.1.1 
+├── karma-jasmine-html-reporter@0.2.2 
+├─┬ protractor@5.1.2 
+│ ├── @types/q@0.0.32 
+│ ├── @types/selenium-webdriver@2.53.43 
+│ ├─┬ blocking-proxy@0.0.5 
+│ │ └── minimist@1.2.0 
+│ ├─┬ chalk@1.1.3 
+│ │ ├── ansi-styles@2.2.1 
+│ │ ├── has-ansi@2.0.0 
+│ │ └── supports-color@2.0.0 
+│ ├─┬ jasmine@2.99.0 
+│ │ ├── exit@0.1.2 
+│ │ └── jasmine-core@2.99.1 
+│ ├── jasminewd2@2.2.0 
+│ ├── q@1.4.1 
+│ ├─┬ saucelabs@1.3.0 
+│ │ └─┬ https-proxy-agent@1.0.0 
+│ │   └─┬ agent-base@2.1.1 
+│ │     └── semver@5.0.3 
+│ ├─┬ selenium-webdriver@3.0.1 
+│ │ └── tmp@0.0.30 
+│ ├─┬ webdriver-js-extender@1.0.0 
+│ │ └─┬ selenium-webdriver@2.53.3 
+│ │   ├── adm-zip@0.4.4 
+│ │   ├── tmp@0.0.24 
+│ │   └─┬ xml2js@0.4.4 
+│ │     └── sax@0.6.1 
+│ └─┬ webdriver-manager@12.0.6 
+│   ├── adm-zip@0.4.7 
+│   ├─┬ del@2.2.2 
+│   │ ├── globby@5.0.0 
+│   │ ├── pify@2.3.0 
+│   │ └─┬ pinkie-promise@2.0.1 
+│   │   └── pinkie@2.0.4 
+│   ├── ini@1.3.5 
+│   ├── minimist@1.2.0 
+│   └─┬ xml2js@0.4.19 
+│     ├── sax@1.2.4 
+│     └── xmlbuilder@9.0.7 
+├─┬ rxjs@5.5.6 
+│ └── symbol-observable@1.0.1 
+├─┬ ts-node@3.2.2 
+│ ├── arrify@1.0.1 
+│ ├── diff@3.4.0 
+│ ├── make-error@1.3.4 
+│ ├── minimist@1.2.0 
+│ ├── mkdirp@0.5.1 
+│ ├─┬ tsconfig@6.0.0 
+│ │ ├── strip-bom@3.0.0 
+│ │ └── strip-json-comments@2.0.1 
+│ ├─┬ v8flags@3.0.2 
+│ │ └─┬ homedir-polyfill@1.0.1 
+│ │   └── parse-passwd@1.0.0 
+│ └── yn@2.0.0 
+├─┬ tslint@5.7.0 
+│ ├─┬ babel-code-frame@6.26.0 
+│ │ ├─┬ chalk@1.1.3 
+│ │ │ ├── ansi-styles@2.2.1 
+│ │ │ └── supports-color@2.0.0 
+│ │ ├── esutils@2.0.2 
+│ │ └── js-tokens@3.0.2 
+│ ├── commander@2.14.1 
+│ └── tsutils@2.22.0 
+├── typescript@2.4.2 
+└── zone.js@0.8.20 
+
+npm WARN optional SKIPPING OPTIONAL DEPENDENCY: fsevents@^1.0.0 (node_modules/chokidar/node_modules/fsevents):
+npm WARN notsup SKIPPING OPTIONAL DEPENDENCY: Unsupported platform for fsevents@1.1.3: wanted {"os":"darwin","arch":"any"} (current: {"os":"linux","arch":"x64"})
+npm WARN optional SKIPPING OPTIONAL DEPENDENCY: fsevents@^1.0.0 (node_modules/watchpack/node_modules/chokidar/node_modules/fsevents):
+npm WARN notsup SKIPPING OPTIONAL DEPENDENCY: Unsupported platform for fsevents@1.1.3: wanted {"os":"darwin","arch":"any"} (current: {"os":"linux","arch":"x64"})
+npm WARN ajv-keywords@3.1.0 requires a peer of ajv@^6.0.0 but none was installed.
++ sudo npm i -g http-server
+/usr/bin/http-server -> /usr/lib/node_modules/http-server/bin/http-server
+/usr/bin/hs -> /usr/lib/node_modules/http-server/bin/http-server
+/usr/lib
+└── http-server@0.11.1 
+
++ ng build
+Your global Angular CLI version (1.7.2) is greater than your local
+version (1.6.3). The local Angular CLI version is used.
+
+To disable this warning use "ng set --global warnings.versionMismatch=false".
+[0mDate: [1m[37m2018-03-02T21:41:53.338Z[39m[22m[0m
+[0mHash: [1m[37m18b758b0ffac0783e230[39m[22m[0m
+[0mTime: [1m[37m19251[39m[22mms[0m
+[0mchunk {[1m[33minline[39m[22m} [1m[32minline.bundle.js, inline.bundle.js.map[39m[22m (inline) 5.83 kB [1m[33m[entry][39m[22m[1m[32m [rendered][39m[22m[0m
+[0mchunk {[1m[33mmain[39m[22m} [1m[32mmain.bundle.js, main.bundle.js.map[39m[22m (main) 133 kB [1m[33m[initial][39m[22m[1m[32m [rendered][39m[22m[0m
+[0mchunk {[1m[33mpolyfills[39m[22m} [1m[32mpolyfills.bundle.js, polyfills.bundle.js.map[39m[22m (polyfills) 201 kB [1m[33m[initial][39m[22m[1m[32m [rendered][39m[22m[0m
+[0mchunk {[1m[33mstyles[39m[22m} [1m[32mstyles.bundle.js, styles.bundle.js.map[39m[22m (styles) 56.5 kB [1m[33m[initial][39m[22m[1m[32m [rendered][39m[22m[0m
+[0mchunk {[1m[33mvendor[39m[22m} [1m[32mvendor.bundle.js, vendor.bundle.js.map[39m[22m (vendor) 5.65 MB [1m[33m[initial][39m[22m[1m[32m [rendered][39m[22m[0m
+++ ps aux
+++ grep node
+++ grep -v grep
+++ awk '{print $2}'
++ sudo kill -9 21491
++ sudo http-server dist/ -p 80
+Process leaked file descriptors. See https://jenkins.io/redirect/troubleshooting/process-leaked-file-descriptors for more information
+Finished: SUCCESS

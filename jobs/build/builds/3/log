@@ -1,0 +1,21 @@
+Started by user [8mha:////4CmxTz33j52/JKdJy1Lt7Xj43LMfbPi10dVPMxZ7t8ixAAAAlx+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAzREgZu/dLi1CL9xJTczDwAwD7+acAAAAA=[0mvishnu priya vedantam
+Building remotely on [8mha:////4KnxwFG0+pUdQXDoOyvQmGroKVPcHxut9RS6DnfLjwmHAAAAmh+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAzWEgZ+/eT83ILSktQi/TygOw0BADPgR8QAAAA=[0mnode1 (slave) in workspace /home/ec2-user/node/workspace/build
+ > /usr/bin/git rev-parse --is-inside-work-tree # timeout=10
+Fetching changes from the remote Git repository
+ > /usr/bin/git config remote.origin.url https://rajuops1@bitbucket.org/maxotechteam/ccst-front.git # timeout=10
+Fetching upstream changes from https://rajuops1@bitbucket.org/maxotechteam/ccst-front.git
+ > /usr/bin/git --version # timeout=10
+using GIT_ASKPASS to set credentials 
+ > /usr/bin/git fetch --tags --progress https://rajuops1@bitbucket.org/maxotechteam/ccst-front.git +refs/heads/*:refs/remotes/origin/*
+ > /usr/bin/git rev-parse refs/remotes/origin/dev^{commit} # timeout=10
+ > /usr/bin/git rev-parse refs/remotes/origin/origin/dev^{commit} # timeout=10
+Checking out Revision 333924078d8d21c5ffa02e6984d570e840362824 (refs/remotes/origin/dev)
+ > /usr/bin/git config core.sparsecheckout # timeout=10
+ > /usr/bin/git checkout -f 333924078d8d21c5ffa02e6984d570e840362824
+Commit message: "added media query to the form header"
+ > /usr/bin/git rev-list --no-walk 333924078d8d21c5ffa02e6984d570e840362824 # timeout=10
+[build] $ /bin/sh -xe /tmp/jenkins3341914802168097822.sh
++ sudo npm install
+/tmp/jenkins3341914802168097822.sh: line 2: 12807 Killed                  sudo npm install
+Build step 'Execute shell' marked build as failure
+Finished: FAILURE
